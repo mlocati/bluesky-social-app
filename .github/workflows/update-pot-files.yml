@@ -1,0 +1,79 @@
+name: Update POT files
+
+on:
+  schedule:
+    - cron: 0 0,12 * * *
+  workflow_dispatch:
+    
+jobs:
+  update-pot-files:
+    name: Branch ${{ matrix.bs-branch }}
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        bs-branch:
+          - main
+    steps:
+      -
+        name: Clone Bluesky repository
+        uses: actions/checkout@v4
+        with:
+          repository: bluesky-social/social-app
+          ref: ${{ matrix.bs-branch }}
+      -
+        name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+      -
+        name: Install dependencies
+        run: yarn install --frozen-lockfile
+      -
+        name: Generate .pot file
+        run: ./node_modules/.bin/lingui extract-template
+      -
+        name: Clone this repository
+        uses: actions/checkout@v4
+        with:
+          path: pots-repo
+      -
+        name: Check differences
+        id: check-diff
+        run: |
+          BS_POT_NEW=src/locale/locales/messages.pot
+          BS_POT_OLD="pots-repo/pot/${{ matrix.bs-branch }}.pot"
+          BS_COMMIT=0
+          if [[ ! -f "$BS_POT_NEW" ]]; then
+            printf 'Failed to find file %s\n' "$BS_POT_NEW"
+            exit 1
+          fi
+          if [[ ! -f "$BS_POT_OLD" ]]; then
+            echo 'New file'
+            mkdir -p pots-repo/pot
+            BS_COMMIT=1
+          else
+            msgattrib --no-fuzzy --no-obsolete --no-location --no-wrap "$BS_POT_NEW" | grep -v '^"POT-Creation-Date:' >/tmp/bs-new
+            msgattrib --no-fuzzy --no-obsolete --no-location --no-wrap "$BS_POT_OLD" | grep -v '^"POT-Creation-Date:' >/tmp/bs-old
+            if diff -u /tmp/bs-old /tmp/bs-new; then
+              echo 'No changes detected'
+            else
+              echo 'Changes detected'
+              BS_COMMIT=1
+            fi
+          fi
+          if [[ $BS_COMMIT -eq 1 ]]; then
+            mv "$BS_POT_NEW" "$BS_POT_OLD"
+            git -C pots-repo add "pot/${{ matrix.bs-branch }}.pot"
+            echo 'commit=yes' >>"$GITHUB_OUTPUT"
+          fi
+      -
+        name: Update this repository
+        if: steps.check-diff.outputs.commit == 'yes'
+        run: |
+          cd pots-repo
+          git config user.name GitHub
+          git config user.email noreply@github.com
+          git commit -m 'Update pot for branch ${{ matrix.bs-branch }}'
+          git push
