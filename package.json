@@ -1,0 +1,13 @@
+{
+  "name": "bluesky-social-app-pot-fetchpo",
+  "version": "1.0.0",
+  "description": "Download .po files",
+  "author": "Michele Locati <michele@locati.it>",
+  "license": "MIT",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@transifex/api": "^7.1.3",
+    "commander": "^12.1.0"
+  }
+}

@@ -1,0 +1,39 @@
+name: Download PO files
+
+on:
+  schedule:
+    - cron: 30 0,12 * * *
+  workflow_dispatch:
+
+jobs:
+  download-from-transifex:
+    name: Download from Transifex
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v4
+      -
+        name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      -
+        name: Install dependencies
+        run: npm ci
+      -
+        name: Download PO files
+        id: download-po-files
+        env:
+          TRANSIFEX_TOKEN: ${{ secrets.TRANSIFEX_TOKEN }}
+        run: node index fetch-po "$TRANSIFEX_TOKEN" po
+      -
+        name: Commit
+        if: steps.download-po-files.outputs.updated == 'yes'
+        run: |
+          git add po
+          git config user.name GitHub
+          git config user.email noreply@github.com
+          git commit -m 'Update po from Transifex'
+          git push

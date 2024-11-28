@@ -16,10 +16,7 @@ jobs:
           - main
     steps:
       -
-        name: Install gettext
-        run: sudo apt-get install -qy gettext
-      -
-        name: Clone Bluesky repository
+        name: Checkout Bluesky repository
         uses: actions/checkout@v4
         with:
           repository: bluesky-social/social-app
@@ -31,51 +28,31 @@ jobs:
           node-version-file: .nvmrc
           cache: yarn
       -
-        name: Install dependencies
+        name: Install dependencies for Bluesky repository
         run: yarn install --frozen-lockfile
       -
         name: Generate .pot file
         run: ./node_modules/.bin/lingui extract-template
       -
-        name: Clone this repository
+        name: Checkout this repository
         uses: actions/checkout@v4
         with:
           path: pots-repo
       -
-        name: Check differences
-        id: check-diff
-        run: |
-          BS_POT_NEW=src/locale/locales/messages.pot
-          BS_POT_OLD="pots-repo/pot/${{ matrix.bs-branch }}.pot"
-          BS_COMMIT=0
-          if [[ ! -f "$BS_POT_NEW" ]]; then
-            printf 'Failed to find file %s\n' "$BS_POT_NEW"
-            exit 1
-          fi
-          if [[ ! -f "$BS_POT_OLD" ]]; then
-            echo 'New file'
-            mkdir -p pots-repo/pot
-            BS_COMMIT=1
-          else
-            msgattrib --no-fuzzy --no-obsolete --no-location --no-wrap "$BS_POT_NEW" | grep -v '^"POT-Creation-Date:' >/tmp/bs-new
-            msgattrib --no-fuzzy --no-obsolete --no-location --no-wrap "$BS_POT_OLD" | grep -v '^"POT-Creation-Date:' >/tmp/bs-old
-            if diff -u /tmp/bs-old /tmp/bs-new; then
-              echo 'No changes detected'
-            else
-              echo 'Changes detected'
-              BS_COMMIT=1
-            fi
-          fi
-          if [[ $BS_COMMIT -eq 1 ]]; then
-            mv "$BS_POT_NEW" "$BS_POT_OLD"
-            git -C pots-repo add "pot/${{ matrix.bs-branch }}.pot"
-            echo 'commit=yes' >>"$GITHUB_OUTPUT"
-          fi
+        name: Install dependencies for this repository
+        working-directory: pots-repo
+        run: npm ci
       -
-        name: Update this repository
-        if: steps.check-diff.outputs.commit == 'yes'
+        name: Check differences
+        id: update-pot
+        working-directory: pots-repo
+        run: node index update-pot "${{ matrix.bs-branch }}" ../src/locale/locales/messages.pot pot
+      -
+        name: Commit
+        if: steps.update-pot.outputs.updated == 'yes'
+        working-directory: pots-repo
         run: |
-          cd pots-repo
+          git add pot
           git config user.name GitHub
           git config user.email noreply@github.com
           git commit -m 'Update pot for branch ${{ matrix.bs-branch }}'
