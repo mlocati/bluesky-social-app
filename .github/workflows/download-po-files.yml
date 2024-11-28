@@ -37,3 +37,21 @@ jobs:
           git config user.email noreply@github.com
           git commit -m 'Update po from Transifex'
           git push
+      -
+        name: Notify update
+        if: steps.download-po-files.outputs.updated == 'yes'
+        uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TG_BOT_TOKEN }}
+          to: ${{ secrets.TG_CHAT_ID }}
+          disable_web_page_preview: true
+          message: Action https://github.com/mlocati/bluesky-social-app-pot/actions/runs/${{ github.run_id }} updated the .po files from Transifex
+      -
+        name: Notify failures
+        if: failure()
+        uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TG_BOT_TOKEN }}
+          to: ${{ secrets.TG_CHAT_ID }}
+          disable_web_page_preview: true
+          message: Downloading PO files from Transifex failed on https://github.com/mlocati/bluesky-social-app-pot/actions/runs/${{ github.run_id }}

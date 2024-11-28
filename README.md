@@ -11,3 +11,8 @@ This repository performs the following tasks:
 ### Download .po files from Transifex
 
 [Another GitHub Action](https://github.com/mlocati/bluesky-social-app-pot/actions/workflows/download-po-files.yml) downloads the .po files from Transifex and stores them in this repository.
+
+
+## Notifications
+
+The GitHub Actions above notify updates/failures to [this Telegram group](https://t.me/ml_bluesky_pot).

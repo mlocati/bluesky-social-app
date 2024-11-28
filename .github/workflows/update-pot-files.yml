@@ -57,3 +57,21 @@ jobs:
           git config user.email noreply@github.com
           git commit -m 'Update pot for branch ${{ matrix.bs-branch }}'
           git push
+      -
+        name: Notify update
+        if: steps.update-pot.outputs.updated == 'yes'
+        uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TG_BOT_TOKEN }}
+          to: ${{ secrets.TG_CHAT_ID }}
+          disable_web_page_preview: true
+          message: Action https://github.com/mlocati/bluesky-social-app-pot/actions/runs/${{ github.run_id }} updated the .pot files for Transifex
+      -
+        name: Notify failures
+        if: failure()
+        uses: appleboy/telegram-action@master
+        with:
+          token: ${{ secrets.TG_BOT_TOKEN }}
+          to: ${{ secrets.TG_CHAT_ID }}
+          disable_web_page_preview: true
+          message: Updating POT files failed on https://github.com/mlocati/bluesky-social-app-pot/actions/runs/${{ github.run_id }}
