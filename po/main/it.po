@@ -1,16 +1,16 @@
 # 
 # Translators:
-# Francisco, 2024
 # arestifop, 2024
 # Michele Locati <michele@locati.it>, 2024
+# Francisco, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-28 01:11+0000\n"
-"PO-Revision-Date: 2024-11-28 15:07+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>, 2024\n"
+"PO-Revision-Date: 2024-11-29 13:02+0000\n"
+"Last-Translator: Francisco, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -76,7 +76,7 @@ msgstr "{0, plural, one {Like (# like)} other {Like (# like)}}"
 
 #: src/view/com/post-thread/PostThreadItem.tsx:447
 msgid "{0, plural, one {like} other {likes}}"
-msgstr "{0, plural, one {like} other {like}}"
+msgstr "{0, plural, one {mi piace} other {mi piace}}"
 
 #: src/components/FeedCard.tsx:213
 #: src/view/com/feeds/FeedSourceCard.tsx:303
@@ -97,7 +97,7 @@ msgstr "{0, plural, one {Rispondi (# risposta)} other {Rispondi (# risposte)}}"
 
 #: src/view/com/post-thread/PostThreadItem.tsx:413
 msgid "{0, plural, one {repost} other {reposts}}"
-msgstr "{0, plural, one {repost} other {reposts}}"
+msgstr "{0, plural, one {repost} other {repost}}"
 
 #: src/view/com/util/post-ctrls/PostCtrls.tsx:301
 msgid "{0, plural, one {Unlike (# like)} other {Unlike (# likes)}}"
@@ -3888,7 +3888,7 @@ msgstr "Altre opzioni"
 
 #: src/screens/Settings/ThreadPreferences.tsx:86
 msgid "Most-liked first"
-msgstr "Prima quelle con più mi piace"
+msgstr "Prima le risposte con più mi piace"
 
 #: src/screens/Settings/ThreadPreferences.tsx:83
 msgid "Most-liked replies first"
@@ -4135,7 +4135,7 @@ msgstr "Nuova lista"
 #: src/screens/Settings/ThreadPreferences.tsx:75
 #: src/screens/Settings/ThreadPreferences.tsx:78
 msgid "Newest replies first"
-msgstr "Mostrare prima le risposte più recenti"
+msgstr "Mostra prima le risposte più recenti"
 
 #: src/screens/Onboarding/index.tsx:20
 #: src/screens/Onboarding/state.ts:95
@@ -4390,7 +4390,7 @@ msgstr "Va bene"
 #: src/screens/Settings/ThreadPreferences.tsx:67
 #: src/screens/Settings/ThreadPreferences.tsx:70
 msgid "Oldest replies first"
-msgstr "Mostrare prima le risposte più vecchie"
+msgstr "Mostra prima le risposte meno recenti"
 
 #: src/components/StarterPack/QrCode.tsx:75
 msgid "on<0><1/><2><3/></2></0>"
@@ -5068,7 +5068,7 @@ msgstr "Citazioni post"
 #: src/screens/Settings/ThreadPreferences.tsx:91
 #: src/screens/Settings/ThreadPreferences.tsx:94
 msgid "Random (aka \"Poster's Roulette\")"
-msgstr "Casuale (nota anche come \"Poster's Roulette\")"
+msgstr "Casuale (nota come \"Poster's Roulette\")"
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:565
 msgid "Rate limit exceeded – you've tried to change your handle too many times in a short period. Please wait a minute before trying again."
@@ -5421,7 +5421,7 @@ msgstr "Ripubblicato da"
 
 #: src/view/com/posts/FeedItem.tsx:303
 msgid "Reposted by {0}"
-msgstr "Ripubblicato da{0}"
+msgstr "Ripubblicato da {0}"
 
 #: src/view/com/posts/FeedItem.tsx:322
 msgid "Reposted by <0><1/></0>"
@@ -6504,7 +6504,7 @@ msgstr "L'applicazione web di Bluesky"
 
 #: src/view/screens/CommunityGuidelines.tsx:38
 msgid "The Community Guidelines have been moved to <0/>"
-msgstr "Le Linee guida della community sono state spostate a<0/>"
+msgstr "Le Linee guida della community sono state spostate a <0/>"
 
 #: src/view/screens/CopyrightPolicy.tsx:35
 msgid "The Copyright Policy has been moved to <0/>"
@@ -6967,11 +6967,11 @@ msgstr "Tipo:"
 
 #: src/view/screens/ProfileList.tsx:594
 msgid "Un-block list"
-msgstr "Sblocca la lista"
+msgstr "Sblocca lista"
 
 #: src/view/screens/ProfileList.tsx:579
 msgid "Un-mute list"
-msgstr "Riattiva questa lista"
+msgstr "Riattiva lista"
 
 #: src/lib/strings/errors.ts:11
 msgid "Unable to connect. Please check your internet connection and try again."
@@ -7080,7 +7080,7 @@ msgstr "Riattiva questa discussione"
 
 #: src/view/com/util/post-embeds/VideoEmbedInner/web-controls/VideoControls.tsx:318
 msgid "Unmute video"
-msgstr "Riattiva auto"
+msgstr "Riattiva audio"
 
 #: src/view/screens/ProfileFeed.tsx:296
 #: src/view/screens/ProfileList.tsx:676
@@ -7157,7 +7157,7 @@ msgstr "Aggiornamento..."
 
 #: src/screens/Onboarding/StepProfile/index.tsx:290
 msgid "Upload a photo instead"
-msgstr "Alternativamente carica una foto"
+msgstr "In alternativa carica una foto"
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:452
 msgid "Upload a text file to:"
@@ -7532,7 +7532,7 @@ msgstr "Non è stato possibile caricare le tue preferenze relative alla data di 
 
 #: src/screens/Moderation/index.tsx:414
 msgid "We were unable to load your configured labelers at this time."
-msgstr "Al momento non è stato possibile caricare le etichettatori configurati."
+msgstr "Al momento non è stato possibile caricare gli etichettatori configurati."
 
 #: src/screens/Onboarding/StepInterests/index.tsx:129
 msgid "We weren't able to connect. Please try again to continue setting up your account. If it continues to fail, you can skip this flow."
@@ -7791,7 +7791,7 @@ msgstr "Hai nascosto questo post"
 
 #: src/components/moderation/ModerationDetailsDialog.tsx:109
 msgid "You have hidden this post."
-msgstr "Hai silenziato questo post."
+msgstr "Hai nascosto questo post."
 
 #: src/components/moderation/ModerationDetailsDialog.tsx:102
 #: src/lib/moderation/useModerationCauseDescription.ts:97
@@ -7898,7 +7898,7 @@ msgstr "Non riceverai più notifiche relative a questo thread"
 
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:213
 msgid "You will now receive notifications for this thread"
-msgstr "Adesso riceverai le notifiche per questa discussione"
+msgstr "Riceverai le notifiche per questo thread"
 
 #: src/screens/Login/SetNewPasswordForm.tsx:98
 msgid "You will receive an email with a \"reset code.\" Enter that code here, then enter your new password."
