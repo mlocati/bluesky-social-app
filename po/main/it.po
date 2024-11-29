@@ -1,16 +1,16 @@
 # 
 # Translators:
 # arestifop, 2024
-# Francisco, 2024
 # Michele Locati <michele@locati.it>, 2024
+# Francisco, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-28 01:11+0000\n"
-"PO-Revision-Date: 2024-11-29 17:19+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>, 2024\n"
+"PO-Revision-Date: 2024-11-29 21:06+0000\n"
+"Last-Translator: Francisco, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -7089,12 +7089,12 @@ msgstr "Non fissare più"
 
 #: src/view/screens/ProfileFeed.tsx:293
 msgid "Unpin from home"
-msgstr "Non fissare più nella home"
+msgstr "Non fissare più su Home"
 
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:379
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:386
 msgid "Unpin from profile"
-msgstr "Non fissare più nel profilo"
+msgstr "Non fissare più sul profilo"
 
 #: src/view/screens/ProfileList.tsx:559
 msgid "Unpin moderation list"
