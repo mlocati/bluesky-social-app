@@ -1,0 +1,80 @@
+name: Fetch PO file
+
+on:
+  workflow_dispatch:
+    inputs:
+      locale-id:
+        description: Locale ID
+        type: string
+        default: it
+        required: true
+      target-branch:
+        description: Target branch
+        type: string
+        required: false
+
+jobs:
+  fetch-po-file:
+    name: Fetch PO file
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Parse inputs
+        id: parse-inputs
+        run: |
+          if ! grep -qE '^[a-z]{2}(-[A-Z]{2,3})?$' <<< '${{ inputs.locale-id }}'; then
+            echo 'Invalid locale ID'
+            exit 1
+          fi
+          echo 'locale-id=${{ inputs.locale-id }}' >>"$GITHUB_OUTPUT"
+
+          if [ -z '${{ inputs.target-branch }}' ]; then
+            echo 'target-branch=update-${{ inputs.locale-id }}' >>"$GITHUB_OUTPUT"
+          else
+            echo 'target-branch=${{ inputs.target-branch }}' >>"$GITHUB_OUTPUT"
+          fi
+      -
+        name: Checkout ${{ steps.parse-inputs.outputs.target-branch }} branch
+        id: checkout-target-branch
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.parse-inputs.outputs.target-branch }}
+      -
+        name: Checkout main branch
+        if: steps.checkout-target-branch.outcome == 'failure'
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      -
+        name: Create ${{ steps.parse-inputs.outputs.target-branch }} branch
+        if: steps.checkout-target-branch.outcome == 'failure'
+        run: git checkout -b '${{ steps.parse-inputs.outputs.target-branch }}'
+      -
+        name: Fetch new .po file
+        id: fetch-po
+        run: |
+          MY_TARGET_PO='src/locale/locales/${{ steps.parse-inputs.outputs.locale-id }}/messages.po'
+          if [ ! -f "$MY_TARGET_PO" ]; then
+            echo '${{ steps.parse-inputs.outputs.locale-id }} is not a currently supported locale'
+            cd src/locale/locales
+            echo 'Valid locales are:'
+            find * -maxdepth 0 -type d
+            exit 1
+          fi
+          MY_SOURCE_PO='https://github.com/mlocati/bluesky-social-app-pot/raw/refs/heads/main/po/main/${{ steps.parse-inputs.outputs.locale-id }}.po'
+          curl -sSLf -o "$MY_TARGET_PO" "$MY_SOURCE_PO"
+          if git diff --exit-code "$MY_TARGET_PO"; then
+            echo 'No changes'
+          else
+            echo 'commit=yes' >>"$GITHUB_OUTPUT"
+          fi
+      -
+        name: Commit
+        if: steps.fetch-po.outputs.commit == 'yes'
+        run: |
+          git add src/locale/locales
+          git config user.name GitHub
+          git config user.email noreply@github.com
+          git commit -m 'Update po from Transifex'
+          git push
