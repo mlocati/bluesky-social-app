@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-28 01:11+0000\n"
-"PO-Revision-Date: 2024-12-02 13:32+0000\n"
+"PO-Revision-Date: 2024-12-02 13:35+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
@@ -1644,7 +1644,7 @@ msgstr "Copiato"
 
 #: src/screens/Settings/AboutSettings.tsx:65
 msgid "Copied build version to clipboard"
-msgstr "Versione di build copiata negli appunti"
+msgstr "Versione della build copiata negli appunti"
 
 #: src/components/dms/MessageMenu.tsx:57
 #: src/lib/sharing.ts:25
@@ -1669,7 +1669,7 @@ msgstr "Copia password per app"
 
 #: src/screens/Settings/AboutSettings.tsx:60
 msgid "Copy build version to clipboard"
-msgstr "Copia versione build negli appunti"
+msgstr "Copia versione della build negli appunti"
 
 #: src/components/dialogs/Embed.tsx:122
 #: src/components/dialogs/Embed.tsx:141
