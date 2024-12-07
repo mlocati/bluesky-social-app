@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2024-12-06 01:10+0000\n"
+"POT-Creation-Date: 2024-12-07 12:27+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -583,7 +583,7 @@ msgstr ""
 msgid "All accounts have been followed!"
 msgstr ""
 
-#: src/view/screens/Feeds.tsx:700
+#: src/view/screens/Feeds.tsx:701
 msgid "All the feeds you've saved, right in one place."
 msgstr ""
 
@@ -1318,6 +1318,11 @@ msgstr ""
 msgid "Choose this color as your avatar"
 msgstr ""
 
+#: src/view/screens/Feeds.tsx:727
+#: src/view/screens/Search/Explore.tsx:391
+msgid "Choose your own timeline! Feeds built by the community help you find content you love."
+msgstr ""
+
 #: src/screens/Signup/StepInfo/index.tsx:201
 msgid "Choose your password"
 msgstr ""
@@ -1792,11 +1797,6 @@ msgstr ""
 msgid "Custom"
 msgstr ""
 
-#: src/view/screens/Feeds.tsx:726
-#: src/view/screens/Search/Explore.tsx:391
-msgid "Custom feeds built by the community bring you new experiences and help you find the content you love."
-msgstr ""
-
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:292
 msgid "Customize who can interact with this post."
 msgstr ""
@@ -2020,7 +2020,7 @@ msgstr ""
 msgid "Discover new feeds"
 msgstr ""
 
-#: src/view/screens/Feeds.tsx:723
+#: src/view/screens/Feeds.tsx:724
 msgid "Discover New Feeds"
 msgstr ""
 
@@ -2219,7 +2219,7 @@ msgid "Edit Moderation List"
 msgstr ""
 
 #: src/Navigation.tsx:295
-#: src/view/screens/Feeds.tsx:513
+#: src/view/screens/Feeds.tsx:514
 msgid "Edit My Feeds"
 msgstr ""
 
@@ -2699,7 +2699,7 @@ msgstr ""
 
 #: src/Navigation.tsx:397
 #: src/screens/StarterPack/StarterPackScreen.tsx:183
-#: src/view/screens/Feeds.tsx:506
+#: src/view/screens/Feeds.tsx:507
 #: src/view/screens/Profile.tsx:230
 #: src/view/screens/SavedFeeds.tsx:96
 #: src/view/screens/Search/Search.tsx:520
@@ -2841,7 +2841,7 @@ msgstr ""
 #: src/components/ProfileHoverCard/index.web.tsx:459
 #: src/screens/Profile/Header/ProfileHeaderStandard.tsx:230
 #: src/view/com/post-thread/PostThreadFollowBtn.tsx:135
-#: src/view/screens/Feeds.tsx:597
+#: src/view/screens/Feeds.tsx:598
 #: src/view/screens/ProfileFollows.tsx:29
 #: src/view/screens/SavedFeeds.tsx:422
 msgid "Following"
@@ -3394,7 +3394,7 @@ msgstr ""
 msgid "Join Bluesky"
 msgstr ""
 
-#: src/components/StarterPack/QrCode.tsx:61
+#: src/components/StarterPack/QrCode.tsx:62
 #: src/view/shell/NavSignupCard.tsx:40
 msgid "Join the conversation"
 msgstr ""
@@ -3984,7 +3984,7 @@ msgstr ""
 msgid "My Birthday"
 msgstr ""
 
-#: src/view/screens/Feeds.tsx:697
+#: src/view/screens/Feeds.tsx:698
 msgid "My Feeds"
 msgstr ""
 
@@ -4086,7 +4086,7 @@ msgctxt "action"
 msgid "New post"
 msgstr ""
 
-#: src/view/screens/Feeds.tsx:547
+#: src/view/screens/Feeds.tsx:548
 #: src/view/screens/Notifications.tsx:177
 #: src/view/screens/Profile.tsx:494
 #: src/view/screens/ProfileFeed.tsx:432
@@ -4222,7 +4222,7 @@ msgstr ""
 msgid "No results found"
 msgstr ""
 
-#: src/view/screens/Feeds.tsx:469
+#: src/view/screens/Feeds.tsx:470
 msgid "No results found for \"{query}\""
 msgstr ""
 
@@ -4367,7 +4367,7 @@ msgstr ""
 msgid "Oldest replies first"
 msgstr ""
 
-#: src/components/StarterPack/QrCode.tsx:75
+#: src/components/StarterPack/QrCode.tsx:76
 msgid "on<0><1/><2><3/></2></0>"
 msgstr ""
 
@@ -5617,6 +5617,10 @@ msgstr ""
 #: src/view/shell/desktop/LeftNav.tsx:383
 #: src/view/shell/Drawer.tsx:365
 msgid "Search"
+msgstr ""
+
+#: src/view/screens/Feeds.tsx:441
+msgid "Search feeds"
 msgstr ""
 
 #: src/view/shell/desktop/Search.tsx:201
