@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2024-12-07 12:27+0000\n"
+"POT-Creation-Date: 2024-12-11 01:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -182,91 +182,91 @@ msgstr ""
 msgid "{estimatedTimeMins, plural, one {minute} other {minutes}}"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:300
+#: src/view/com/notifications/NotificationFeedItem.tsx:300
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> followed you"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:326
+#: src/view/com/notifications/NotificationFeedItem.tsx:326
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> liked your custom feed"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:222
+#: src/view/com/notifications/NotificationFeedItem.tsx:222
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> liked your post"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:246
+#: src/view/com/notifications/NotificationFeedItem.tsx:246
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> reposted your post"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:350
+#: src/view/com/notifications/NotificationFeedItem.tsx:350
 msgid "{firstAuthorLink} and <0>{additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}}</0> signed up with your starter pack"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:312
+#: src/view/com/notifications/NotificationFeedItem.tsx:312
 msgid "{firstAuthorLink} followed you"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:289
+#: src/view/com/notifications/NotificationFeedItem.tsx:289
 msgid "{firstAuthorLink} followed you back"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:338
+#: src/view/com/notifications/NotificationFeedItem.tsx:338
 msgid "{firstAuthorLink} liked your custom feed"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:234
+#: src/view/com/notifications/NotificationFeedItem.tsx:234
 msgid "{firstAuthorLink} liked your post"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:258
+#: src/view/com/notifications/NotificationFeedItem.tsx:258
 msgid "{firstAuthorLink} reposted your post"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:362
+#: src/view/com/notifications/NotificationFeedItem.tsx:362
 msgid "{firstAuthorLink} signed up with your starter pack"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:293
+#: src/view/com/notifications/NotificationFeedItem.tsx:293
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} followed you"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:319
+#: src/view/com/notifications/NotificationFeedItem.tsx:319
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} liked your custom feed"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:215
+#: src/view/com/notifications/NotificationFeedItem.tsx:215
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} liked your post"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:239
+#: src/view/com/notifications/NotificationFeedItem.tsx:239
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} reposted your post"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:343
+#: src/view/com/notifications/NotificationFeedItem.tsx:343
 msgid "{firstAuthorName} and {additionalAuthorsCount, plural, one {{formattedAuthorsCount} other} other {{formattedAuthorsCount} others}} signed up with your starter pack"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:298
+#: src/view/com/notifications/NotificationFeedItem.tsx:298
 msgid "{firstAuthorName} followed you"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:288
+#: src/view/com/notifications/NotificationFeedItem.tsx:288
 msgid "{firstAuthorName} followed you back"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:324
+#: src/view/com/notifications/NotificationFeedItem.tsx:324
 msgid "{firstAuthorName} liked your custom feed"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:220
+#: src/view/com/notifications/NotificationFeedItem.tsx:220
 msgid "{firstAuthorName} liked your post"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:244
+#: src/view/com/notifications/NotificationFeedItem.tsx:244
 msgid "{firstAuthorName} reposted your post"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:348
+#: src/view/com/notifications/NotificationFeedItem.tsx:348
 msgid "{firstAuthorName} signed up with your starter pack"
 msgstr ""
 
@@ -370,7 +370,7 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: src/view/screens/Search/Search.tsx:859
+#: src/view/screens/Search/Search.tsx:857
 msgid "Access navigation links and settings"
 msgstr ""
 
@@ -583,7 +583,7 @@ msgstr ""
 msgid "All accounts have been followed!"
 msgstr ""
 
-#: src/view/screens/Feeds.tsx:701
+#: src/view/screens/Feeds.tsx:702
 msgid "All the feeds you've saved, right in one place."
 msgstr ""
 
@@ -989,7 +989,7 @@ msgid "Blocked accounts"
 msgstr ""
 
 #: src/Navigation.tsx:154
-#: src/view/screens/ModerationBlockedAccounts.tsx:100
+#: src/view/screens/ModerationBlockedAccounts.tsx:101
 msgid "Blocked Accounts"
 msgstr ""
 
@@ -998,11 +998,11 @@ msgstr ""
 msgid "Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you."
 msgstr ""
 
-#: src/view/screens/ModerationBlockedAccounts.tsx:111
+#: src/view/screens/ModerationBlockedAccounts.tsx:112
 msgid "Blocked accounts cannot reply in your threads, mention you, or otherwise interact with you. You will not see their content and they will be prevented from seeing yours."
 msgstr ""
 
-#: src/view/com/post-thread/PostThread.tsx:420
+#: src/view/com/post-thread/PostThread.tsx:419
 msgid "Blocked post."
 msgstr ""
 
@@ -1147,7 +1147,7 @@ msgstr ""
 #: src/view/com/modals/VerifyEmail.tsx:255
 #: src/view/com/modals/VerifyEmail.tsx:261
 #: src/view/com/util/post-ctrls/RepostButton.tsx:203
-#: src/view/screens/Search/Search.tsx:888
+#: src/view/screens/Search/Search.tsx:886
 msgid "Cancel"
 msgstr ""
 
@@ -1180,7 +1180,7 @@ msgid "Cancel reactivation and log out"
 msgstr ""
 
 #: src/view/com/modals/ListAddRemoveUsers.tsx:88
-#: src/view/screens/Search/Search.tsx:880
+#: src/view/screens/Search/Search.tsx:878
 msgid "Cancel search"
 msgstr ""
 
@@ -1318,7 +1318,7 @@ msgstr ""
 msgid "Choose this color as your avatar"
 msgstr ""
 
-#: src/view/screens/Feeds.tsx:727
+#: src/view/screens/Feeds.tsx:728
 #: src/view/screens/Search/Explore.tsx:391
 msgid "Choose your own timeline! Feeds built by the community help you find content you love."
 msgstr ""
@@ -1438,11 +1438,11 @@ msgstr ""
 msgid "Closes viewer for header image"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:400
+#: src/view/com/notifications/NotificationFeedItem.tsx:400
 msgid "Collapse list of users"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:593
+#: src/view/com/notifications/NotificationFeedItem.tsx:593
 msgid "Collapses list of users for a given notification"
 msgstr ""
 
@@ -1919,7 +1919,7 @@ msgstr ""
 msgid "Deleted Account"
 msgstr ""
 
-#: src/view/com/post-thread/PostThread.tsx:406
+#: src/view/com/post-thread/PostThread.tsx:405
 msgid "Deleted post."
 msgstr ""
 
@@ -2020,7 +2020,7 @@ msgstr ""
 msgid "Discover new feeds"
 msgstr ""
 
-#: src/view/screens/Feeds.tsx:724
+#: src/view/screens/Feeds.tsx:725
 msgid "Discover New Feeds"
 msgstr ""
 
@@ -2219,7 +2219,7 @@ msgid "Edit Moderation List"
 msgstr ""
 
 #: src/Navigation.tsx:295
-#: src/view/screens/Feeds.tsx:514
+#: src/view/screens/Feeds.tsx:515
 msgid "Edit My Feeds"
 msgstr ""
 
@@ -2516,7 +2516,7 @@ msgstr ""
 msgid "Expand alt text"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:401
+#: src/view/com/notifications/NotificationFeedItem.tsx:401
 msgid "Expand list of users"
 msgstr ""
 
@@ -2688,6 +2688,7 @@ msgid "Feed toggle"
 msgstr ""
 
 #: src/view/shell/desktop/RightNav.tsx:69
+#: src/view/shell/desktop/RightNav.tsx:70
 #: src/view/shell/Drawer.tsx:319
 msgid "Feedback"
 msgstr ""
@@ -2699,10 +2700,10 @@ msgstr ""
 
 #: src/Navigation.tsx:397
 #: src/screens/StarterPack/StarterPackScreen.tsx:183
-#: src/view/screens/Feeds.tsx:507
-#: src/view/screens/Profile.tsx:230
+#: src/view/screens/Feeds.tsx:508
+#: src/view/screens/Profile.tsx:229
 #: src/view/screens/SavedFeeds.tsx:96
-#: src/view/screens/Search/Search.tsx:520
+#: src/view/screens/Search/Search.tsx:518
 #: src/view/shell/desktop/LeftNav.tsx:421
 #: src/view/shell/Drawer.tsx:476
 msgid "Feeds"
@@ -2735,7 +2736,7 @@ msgstr ""
 msgid "Find accounts to follow"
 msgstr ""
 
-#: src/view/screens/Search/Search.tsx:589
+#: src/view/screens/Search/Search.tsx:587
 msgid "Find posts and users on Bluesky"
 msgstr ""
 
@@ -2841,7 +2842,7 @@ msgstr ""
 #: src/components/ProfileHoverCard/index.web.tsx:459
 #: src/screens/Profile/Header/ProfileHeaderStandard.tsx:230
 #: src/view/com/post-thread/PostThreadFollowBtn.tsx:135
-#: src/view/screens/Feeds.tsx:598
+#: src/view/screens/Feeds.tsx:599
 #: src/view/screens/ProfileFollows.tsx:29
 #: src/view/screens/SavedFeeds.tsx:422
 msgid "Following"
@@ -2920,11 +2921,11 @@ msgstr ""
 msgid "Frequently Posts Unwanted Content"
 msgstr ""
 
-#: src/screens/Hashtag.tsx:118
+#: src/screens/Hashtag.tsx:116
 msgid "From @{sanitizedAuthor}"
 msgstr ""
 
-#: src/view/com/posts/FeedItem.tsx:282
+#: src/view/com/posts/PostFeedItem.tsx:282
 msgctxt "from-feed"
 msgid "From <0/>"
 msgstr ""
@@ -3075,7 +3076,8 @@ msgstr ""
 
 #: src/screens/Settings/Settings.tsx:207
 #: src/screens/Settings/Settings.tsx:211
-#: src/view/shell/desktop/RightNav.tsx:98
+#: src/view/shell/desktop/RightNav.tsx:87
+#: src/view/shell/desktop/RightNav.tsx:88
 #: src/view/shell/Drawer.tsx:332
 msgid "Help"
 msgstr ""
@@ -3103,7 +3105,7 @@ msgstr ""
 msgid "Hide"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:600
+#: src/view/com/notifications/NotificationFeedItem.tsx:600
 msgctxt "action"
 msgid "Hide"
 msgstr ""
@@ -3137,27 +3139,27 @@ msgstr ""
 msgid "Hide this reply?"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:591
+#: src/view/com/notifications/NotificationFeedItem.tsx:591
 msgid "Hide user list"
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:117
+#: src/view/com/posts/PostFeedErrorMessage.tsx:117
 msgid "Hmm, some kind of issue occurred when contacting the feed server. Please let the feed owner know about this issue."
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:105
+#: src/view/com/posts/PostFeedErrorMessage.tsx:105
 msgid "Hmm, the feed server appears to be misconfigured. Please let the feed owner know about this issue."
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:111
+#: src/view/com/posts/PostFeedErrorMessage.tsx:111
 msgid "Hmm, the feed server appears to be offline. Please let the feed owner know about this issue."
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:108
+#: src/view/com/posts/PostFeedErrorMessage.tsx:108
 msgid "Hmm, the feed server gave a bad response. Please let the feed owner know about this issue."
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:102
+#: src/view/com/posts/PostFeedErrorMessage.tsx:102
 msgid "Hmm, we're having trouble finding this feed. It may have been deleted."
 msgstr ""
 
@@ -3413,7 +3415,7 @@ msgid "Labeled by the author."
 msgstr ""
 
 #: src/view/com/composer/labels/LabelsBtn.tsx:75
-#: src/view/screens/Profile.tsx:224
+#: src/view/screens/Profile.tsx:223
 msgid "Labels"
 msgstr ""
 
@@ -3451,8 +3453,8 @@ msgstr ""
 msgid "Larger"
 msgstr ""
 
-#: src/screens/Hashtag.tsx:97
-#: src/view/screens/Search/Search.tsx:504
+#: src/screens/Hashtag.tsx:95
+#: src/view/screens/Search/Search.tsx:502
 msgid "Latest"
 msgstr ""
 
@@ -3564,7 +3566,7 @@ msgstr ""
 msgid "Liked By"
 msgstr ""
 
-#: src/view/screens/Profile.tsx:229
+#: src/view/screens/Profile.tsx:228
 msgid "Likes"
 msgstr ""
 
@@ -3619,8 +3621,8 @@ msgstr ""
 
 #: src/Navigation.tsx:134
 #: src/view/screens/Lists.tsx:62
-#: src/view/screens/Profile.tsx:225
-#: src/view/screens/Profile.tsx:232
+#: src/view/screens/Profile.tsx:224
+#: src/view/screens/Profile.tsx:231
 #: src/view/shell/desktop/LeftNav.tsx:439
 #: src/view/shell/Drawer.tsx:491
 msgid "Lists"
@@ -3647,7 +3649,7 @@ msgid "Load new notifications"
 msgstr ""
 
 #: src/screens/Profile/Sections/Feed.tsx:96
-#: src/view/com/feeds/FeedPage.tsx:134
+#: src/view/com/feeds/FeedPage.tsx:135
 #: src/view/screens/ProfileFeed.tsx:498
 #: src/view/screens/ProfileList.tsx:807
 msgid "Load new posts"
@@ -3681,10 +3683,11 @@ msgstr ""
 msgid "Login to account that is not listed"
 msgstr ""
 
-#: src/view/shell/desktop/RightNav.tsx:103
-msgid "Logo by <0/>"
+#: src/view/shell/desktop/RightNav.tsx:97
+msgid "Logo by @sawaratsuki.bsky.social"
 msgstr ""
 
+#: src/view/shell/desktop/RightNav.tsx:94
 #: src/view/shell/Drawer.tsx:629
 msgid "Logo by <0>@sawaratsuki.bsky.social</0>"
 msgstr ""
@@ -3731,7 +3734,7 @@ msgstr ""
 msgid "Mark as read"
 msgstr ""
 
-#: src/view/screens/Profile.tsx:228
+#: src/view/screens/Profile.tsx:227
 msgid "Media"
 msgstr ""
 
@@ -3748,7 +3751,7 @@ msgid "Mentioned users"
 msgstr ""
 
 #: src/components/Menu/index.tsx:95
-#: src/view/screens/Search/Search.tsx:857
+#: src/view/screens/Search/Search.tsx:855
 msgid "Menu"
 msgstr ""
 
@@ -3761,7 +3764,7 @@ msgstr ""
 msgid "Message deleted"
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:201
+#: src/view/com/posts/PostFeedErrorMessage.tsx:201
 msgid "Message from server: {0}"
 msgstr ""
 
@@ -3851,7 +3854,8 @@ msgstr ""
 msgid "More"
 msgstr ""
 
-#: src/view/shell/desktop/Feeds.tsx:54
+#: src/view/shell/desktop/Feeds.tsx:76
+#: src/view/shell/desktop/Feeds.tsx:79
 msgid "More feeds"
 msgstr ""
 
@@ -3959,11 +3963,11 @@ msgid "Muted accounts"
 msgstr ""
 
 #: src/Navigation.tsx:149
-#: src/view/screens/ModerationMutedAccounts.tsx:99
+#: src/view/screens/ModerationMutedAccounts.tsx:100
 msgid "Muted Accounts"
 msgstr ""
 
-#: src/view/screens/ModerationMutedAccounts.tsx:111
+#: src/view/screens/ModerationMutedAccounts.tsx:112
 msgid "Muted accounts have their posts removed from your feed and from your notifications. Mutes are completely private."
 msgstr ""
 
@@ -3984,7 +3988,7 @@ msgstr ""
 msgid "My Birthday"
 msgstr ""
 
-#: src/view/screens/Feeds.tsx:698
+#: src/view/screens/Feeds.tsx:699
 msgid "My Feeds"
 msgstr ""
 
@@ -4081,14 +4085,14 @@ msgstr ""
 msgid "New Password"
 msgstr ""
 
-#: src/view/com/feeds/FeedPage.tsx:145
+#: src/view/com/feeds/FeedPage.tsx:146
 msgctxt "action"
 msgid "New post"
 msgstr ""
 
-#: src/view/screens/Feeds.tsx:548
+#: src/view/screens/Feeds.tsx:549
 #: src/view/screens/Notifications.tsx:177
-#: src/view/screens/Profile.tsx:494
+#: src/view/screens/Profile.tsx:484
 #: src/view/screens/ProfileFeed.tsx:432
 #: src/view/screens/ProfileList.tsx:247
 #: src/view/screens/ProfileList.tsx:286
@@ -4184,7 +4188,7 @@ msgstr ""
 msgid "No more conversations to show"
 msgstr ""
 
-#: src/view/com/notifications/Feed.tsx:118
+#: src/view/com/notifications/NotificationFeed.tsx:118
 msgid "No notifications yet!"
 msgstr ""
 
@@ -4547,7 +4551,7 @@ msgstr ""
 msgid "Opens the linked website"
 msgstr ""
 
-#: src/view/com/notifications/FeedItem.tsx:678
+#: src/view/com/notifications/NotificationFeedItem.tsx:678
 #: src/view/com/util/UserAvatar.tsx:436
 msgid "Opens this profile"
 msgstr ""
@@ -4639,7 +4643,7 @@ msgid "Pause video"
 msgstr ""
 
 #: src/screens/StarterPack/StarterPackScreen.tsx:182
-#: src/view/screens/Search/Search.tsx:514
+#: src/view/screens/Search/Search.tsx:512
 msgid "People"
 msgstr ""
 
@@ -4690,7 +4694,7 @@ msgstr ""
 msgid "Pin to your profile"
 msgstr ""
 
-#: src/view/com/posts/FeedItem.tsx:363
+#: src/view/com/posts/PostFeedItem.tsx:363
 msgid "Pinned"
 msgstr ""
 
@@ -4799,7 +4803,7 @@ msgctxt "action"
 msgid "Post"
 msgstr ""
 
-#: src/view/com/post-thread/PostThread.tsx:489
+#: src/view/com/post-thread/PostThread.tsx:488
 msgctxt "description"
 msgid "Post"
 msgstr ""
@@ -4872,7 +4876,7 @@ msgid "posts"
 msgstr ""
 
 #: src/screens/StarterPack/StarterPackScreen.tsx:184
-#: src/view/screens/Profile.tsx:226
+#: src/view/screens/Profile.tsx:225
 msgid "Posts"
 msgstr ""
 
@@ -4880,7 +4884,7 @@ msgstr ""
 msgid "Posts can be muted based on their text, their tags, or both. We recommend avoiding common words that appear in many posts, since it can result in no posts being shown."
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:68
+#: src/view/com/posts/PostFeedErrorMessage.tsx:68
 msgid "Posts hidden"
 msgstr ""
 
@@ -4928,7 +4932,8 @@ msgstr ""
 msgid "Priority notifications"
 msgstr ""
 
-#: src/view/shell/desktop/RightNav.tsx:80
+#: src/view/shell/desktop/RightNav.tsx:77
+#: src/view/shell/desktop/RightNav.tsx:78
 msgid "Privacy"
 msgstr ""
 
@@ -4961,7 +4966,7 @@ msgid "Processing..."
 msgstr ""
 
 #: src/view/screens/DebugMod.tsx:913
-#: src/view/screens/Profile.tsx:361
+#: src/view/screens/Profile.tsx:351
 msgid "profile"
 msgstr ""
 
@@ -5075,7 +5080,7 @@ msgstr ""
 msgid "Reason:"
 msgstr ""
 
-#: src/view/screens/Search/Search.tsx:1033
+#: src/view/screens/Search/Search.tsx:1031
 msgid "Recent Searches"
 msgstr ""
 
@@ -5099,7 +5104,7 @@ msgstr ""
 #: src/view/com/feeds/FeedSourceCard.tsx:319
 #: src/view/com/modals/ListAddRemoveUsers.tsx:269
 #: src/view/com/modals/UserAddRemoveLists.tsx:235
-#: src/view/com/posts/FeedErrorMessage.tsx:213
+#: src/view/com/posts/PostFeedErrorMessage.tsx:213
 msgid "Remove"
 msgstr ""
 
@@ -5128,13 +5133,13 @@ msgstr ""
 msgid "Remove embed"
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:169
 #: src/view/com/posts/FeedShutdownMsg.tsx:116
 #: src/view/com/posts/FeedShutdownMsg.tsx:120
+#: src/view/com/posts/PostFeedErrorMessage.tsx:169
 msgid "Remove feed"
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:210
+#: src/view/com/posts/PostFeedErrorMessage.tsx:210
 msgid "Remove feed?"
 msgstr ""
 
@@ -5168,11 +5173,11 @@ msgstr ""
 msgid "Remove mute word from your list"
 msgstr ""
 
-#: src/view/screens/Search/Search.tsx:1077
+#: src/view/screens/Search/Search.tsx:1075
 msgid "Remove profile"
 msgstr ""
 
-#: src/view/screens/Search/Search.tsx:1079
+#: src/view/screens/Search/Search.tsx:1077
 msgid "Remove profile from search history"
 msgstr ""
 
@@ -5189,7 +5194,7 @@ msgstr ""
 msgid "Remove subtitle file"
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:211
+#: src/view/com/posts/PostFeedErrorMessage.tsx:211
 msgid "Remove this feed from your saved feeds"
 msgstr ""
 
@@ -5230,7 +5235,7 @@ msgstr ""
 msgid "Replace with Discover"
 msgstr ""
 
-#: src/view/screens/Profile.tsx:227
+#: src/view/screens/Profile.tsx:226
 msgid "Replies"
 msgstr ""
 
@@ -5266,23 +5271,23 @@ msgid "Reply settings are chosen by the author of the thread"
 msgstr ""
 
 #: src/view/com/post/Post.tsx:204
-#: src/view/com/posts/FeedItem.tsx:553
+#: src/view/com/posts/PostFeedItem.tsx:553
 msgctxt "description"
 msgid "Reply to <0><1/></0>"
 msgstr ""
 
-#: src/view/com/posts/FeedItem.tsx:544
+#: src/view/com/posts/PostFeedItem.tsx:544
 msgctxt "description"
 msgid "Reply to a blocked post"
 msgstr ""
 
-#: src/view/com/posts/FeedItem.tsx:546
+#: src/view/com/posts/PostFeedItem.tsx:546
 msgctxt "description"
 msgid "Reply to a post"
 msgstr ""
 
 #: src/view/com/post/Post.tsx:202
-#: src/view/com/posts/FeedItem.tsx:550
+#: src/view/com/posts/PostFeedItem.tsx:550
 msgctxt "description"
 msgid "Reply to you"
 msgstr ""
@@ -5392,16 +5397,16 @@ msgstr ""
 msgid "Reposted By"
 msgstr ""
 
-#: src/view/com/posts/FeedItem.tsx:303
+#: src/view/com/posts/PostFeedItem.tsx:303
 msgid "Reposted by {0}"
 msgstr ""
 
-#: src/view/com/posts/FeedItem.tsx:322
+#: src/view/com/posts/PostFeedItem.tsx:322
 msgid "Reposted by <0><1/></0>"
 msgstr ""
 
-#: src/view/com/posts/FeedItem.tsx:301
-#: src/view/com/posts/FeedItem.tsx:320
+#: src/view/com/posts/PostFeedItem.tsx:301
+#: src/view/com/posts/PostFeedItem.tsx:320
 msgid "Reposted by you"
 msgstr ""
 
@@ -5593,8 +5598,8 @@ msgstr ""
 
 #: src/components/dms/ChatEmptyPill.tsx:33
 #: src/components/NewskieDialog.tsx:105
-#: src/view/com/notifications/FeedItem.tsx:539
-#: src/view/com/notifications/FeedItem.tsx:564
+#: src/view/com/notifications/NotificationFeedItem.tsx:539
+#: src/view/com/notifications/NotificationFeedItem.tsx:564
 msgid "Say hello!"
 msgstr ""
 
@@ -5612,7 +5617,7 @@ msgstr ""
 #: src/components/forms/SearchInput.tsx:36
 #: src/Navigation.tsx:593
 #: src/view/com/modals/ListAddRemoveUsers.tsx:76
-#: src/view/screens/Search/Search.tsx:571
+#: src/view/screens/Search/Search.tsx:569
 #: src/view/shell/bottom-bar/BottomBar.tsx:178
 #: src/view/shell/desktop/LeftNav.tsx:383
 #: src/view/shell/Drawer.tsx:365
@@ -5627,7 +5632,7 @@ msgstr ""
 msgid "Search for \"{query}\""
 msgstr ""
 
-#: src/view/screens/Search/Search.tsx:981
+#: src/view/screens/Search/Search.tsx:979
 msgid "Search for \"{searchText}\""
 msgstr ""
 
@@ -5876,7 +5881,7 @@ msgid "Sexually Suggestive"
 msgstr ""
 
 #: src/components/StarterPack/QrCodeDialog.tsx:175
-#: src/screens/Hashtag.tsx:124
+#: src/screens/Hashtag.tsx:122
 #: src/screens/StarterPack/StarterPackScreen.tsx:422
 #: src/screens/StarterPack/StarterPackScreen.tsx:594
 #: src/view/com/profile/ProfileMenu.tsx:195
@@ -5996,7 +6001,7 @@ msgstr ""
 
 #: src/view/com/post-thread/PostThreadItem.tsx:593
 #: src/view/com/post/Post.tsx:242
-#: src/view/com/posts/FeedItem.tsx:509
+#: src/view/com/posts/PostFeedItem.tsx:509
 msgid "Show More"
 msgstr ""
 
@@ -6242,7 +6247,7 @@ msgstr ""
 msgid "Starter pack is invalid"
 msgstr ""
 
-#: src/view/screens/Profile.tsx:231
+#: src/view/screens/Profile.tsx:230
 msgid "Starter Packs"
 msgstr ""
 
@@ -6399,7 +6404,8 @@ msgstr ""
 msgid "Tell us a little more"
 msgstr ""
 
-#: src/view/shell/desktop/RightNav.tsx:89
+#: src/view/shell/desktop/RightNav.tsx:83
+#: src/view/shell/desktop/RightNav.tsx:84
 msgid "Terms"
 msgstr ""
 
@@ -6579,11 +6585,11 @@ msgstr ""
 msgid "There was an issue contacting your server"
 msgstr ""
 
-#: src/view/com/notifications/Feed.tsx:126
+#: src/view/com/notifications/NotificationFeed.tsx:126
 msgid "There was an issue fetching notifications. Tap here to try again."
 msgstr ""
 
-#: src/view/com/posts/Feed.tsx:458
+#: src/view/com/posts/PostFeed.tsx:458
 msgid "There was an issue fetching posts. Tap here to try again."
 msgstr ""
 
@@ -6604,7 +6610,7 @@ msgstr ""
 msgid "There was an issue fetching your service info"
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:145
+#: src/view/com/posts/PostFeedErrorMessage.tsx:145
 msgid "There was an issue removing this feed. Please check your internet connection and try again."
 msgstr ""
 
@@ -6699,7 +6705,7 @@ msgstr ""
 msgid "This content is not available because one of the users involved has blocked the other."
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:114
+#: src/view/com/posts/PostFeedErrorMessage.tsx:114
 msgid "This content is not viewable without a Bluesky account."
 msgstr ""
 
@@ -6715,7 +6721,7 @@ msgstr ""
 msgid "This feature is not available while using an App Password. Please sign in with your main password."
 msgstr ""
 
-#: src/view/com/posts/FeedErrorMessage.tsx:120
+#: src/view/com/posts/PostFeedErrorMessage.tsx:120
 msgid "This feed is currently receiving high traffic and is temporarily unavailable. Please try again later."
 msgstr ""
 
@@ -6908,8 +6914,8 @@ msgstr ""
 msgid "Toggle to enable or disable adult content"
 msgstr ""
 
-#: src/screens/Hashtag.tsx:86
-#: src/view/screens/Search/Search.tsx:494
+#: src/screens/Hashtag.tsx:84
+#: src/view/screens/Search/Search.tsx:492
 msgid "Top"
 msgstr ""
 
@@ -7366,7 +7372,7 @@ msgid "View {0}'s avatar"
 msgstr ""
 
 #: src/components/ProfileCard.tsx:110
-#: src/view/com/notifications/FeedItem.tsx:408
+#: src/view/com/notifications/NotificationFeedItem.tsx:408
 msgid "View {0}'s profile"
 msgstr ""
 
@@ -7414,7 +7420,7 @@ msgstr ""
 #: src/components/ProfileHoverCard/index.web.tsx:439
 #: src/components/ProfileHoverCard/index.web.tsx:466
 #: src/view/com/posts/AviFollowButton.tsx:55
-#: src/view/com/posts/FeedErrorMessage.tsx:175
+#: src/view/com/posts/PostFeedErrorMessage.tsx:175
 #: src/view/com/util/PostMeta.tsx:79
 #: src/view/com/util/PostMeta.tsx:94
 msgid "View profile"
@@ -7472,7 +7478,7 @@ msgstr ""
 msgid "Warn content and filter from feeds"
 msgstr ""
 
-#: src/screens/Hashtag.tsx:207
+#: src/screens/Hashtag.tsx:205
 msgid "We couldn't find any results for that hashtag."
 msgstr ""
 
@@ -7789,11 +7795,11 @@ msgstr ""
 msgid "You have no lists."
 msgstr ""
 
-#: src/view/screens/ModerationBlockedAccounts.tsx:128
+#: src/view/screens/ModerationBlockedAccounts.tsx:129
 msgid "You have not blocked any accounts yet. To block an account, go to their profile and select \"Block account\" from the menu on their account."
 msgstr ""
 
-#: src/view/screens/ModerationMutedAccounts.tsx:127
+#: src/view/screens/ModerationMutedAccounts.tsx:128
 msgid "You have not muted any accounts yet. To mute an account, go to their profile and select \"Mute account\" from the menu on their account."
 msgstr ""
 
