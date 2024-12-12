@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-12 01:11+0000\n"
-"PO-Revision-Date: 2024-12-12 02:13+0000\n"
+"PO-Revision-Date: 2024-12-12 08:36+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
@@ -34,11 +34,11 @@ msgstr "{0, plural, one {# giorno} other {# giorni}}"
 
 #: src/screens/Profile/ProfileFollowers.tsx:40
 msgid "{0, plural, one {# follower} other {# followers}}"
-msgstr ""
+msgstr "{0, plural, one {# follower} other {# follower}}"
 
 #: src/screens/Profile/ProfileFollows.tsx:40
 msgid "{0, plural, one {# following} other {# following}}"
-msgstr ""
+msgstr "{0, plural, one {# seguito} other {# seguiti}}"
 
 #: src/lib/hooks/useTimeAgo.ts:146
 msgid "{0, plural, one {# hour} other {# hours}}"
@@ -54,7 +54,7 @@ msgstr "{0, plural, one {# etichetta è stata applicata a questo contenuto} othe
 
 #: src/screens/Post/PostLikedBy.tsx:41
 msgid "{0, plural, one {# like} other {# likes}}"
-msgstr ""
+msgstr "{0, plural, one {# mi piace} other {# mi piace}}"
 
 #: src/lib/hooks/useTimeAgo.ts:136
 msgid "{0, plural, one {# minute} other {# minutes}}"
@@ -66,7 +66,7 @@ msgstr "{0, plural, one {# mese} other {# mesi}}"
 
 #: src/screens/Post/PostQuotes.tsx:41
 msgid "{0, plural, one {# quote} other {# quotes}}"
-msgstr ""
+msgstr "{0, plural, one {# citazione} other {# citazioni}}"
 
 #: src/view/com/util/post-ctrls/RepostButton.tsx:69
 msgid "{0, plural, one {# repost} other {# reposts}}"
@@ -74,7 +74,7 @@ msgstr "{0, plural, one {# ripubblicazione} other {# ripubblicazioni}}"
 
 #: src/screens/Post/PostRepostedBy.tsx:41
 msgid "{0, plural, one {# reposts} other {# reposts}}"
-msgstr ""
+msgstr "{0, plural, one {# ripubblicazione} other {# ripubblicazioni}}"
 
 #: src/lib/hooks/useTimeAgo.ts:126
 msgid "{0, plural, one {# second} other {# seconds}}"
@@ -1082,11 +1082,11 @@ msgstr "Bluesky non mostrerà il tuo profilo e i tuoi post agli utenti non logga
 
 #: src/screens/Settings/AppIconSettings/index.tsx:99
 msgid "Bluesky+"
-msgstr ""
+msgstr "Bluesky+"
 
 #: src/screens/Settings/AppIconSettings/index.tsx:102
 msgid "Bluesky+ icons"
-msgstr ""
+msgstr "Icone Bluesky+"
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:53
 msgid "Blur images"
@@ -1252,7 +1252,7 @@ msgstr "Cambia"
 
 #: src/screens/Settings/AppIconSettings/index.tsx:39
 msgid "Change app icon"
-msgstr ""
+msgstr "Cambia icona app"
 
 #: src/screens/Settings/AppIconSettings/index.tsx:38
 #: src/screens/Settings/AppIconSettings/index.tsx:221
@@ -1885,7 +1885,7 @@ msgstr "Predefinito"
 
 #: src/screens/Settings/AppIconSettings/index.tsx:75
 msgid "Default icons"
-msgstr ""
+msgstr "Icone predefinite"
 
 #: src/components/dms/MessageMenu.tsx:151
 #: src/screens/Settings/AppPasswords.tsx:212
@@ -5898,7 +5898,7 @@ msgstr "Indirizzo del server"
 
 #: src/screens/Settings/AppIconSettings/index.tsx:178
 msgid "Set app icon to {0}"
-msgstr ""
+msgstr "Imposta icona app su {0}"
 
 #: src/screens/Moderation/index.tsx:290
 msgid "Set birthdate"
