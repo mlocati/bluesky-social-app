@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2024-12-12 01:11+0000\n"
+"POT-Creation-Date: 2024-12-12 09:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,11 +32,11 @@ msgid "{0, plural, one {# hour} other {# hours}}"
 msgstr ""
 
 #: src/components/moderation/LabelsOnMe.tsx:53
-msgid "{0, plural, one {# label has been placed on this account} other {# labels have been placed on this account}}"
+msgid "{0, plural, one {# label has} other {# labels have}} been placed on this account"
 msgstr ""
 
-#: src/components/moderation/LabelsOnMe.tsx:59
-msgid "{0, plural, one {# label has been placed on this content} other {# labels have been placed on this content}}"
+#: src/components/moderation/LabelsOnMe.tsx:62
+msgid "{0, plural, one {# label has} other {# labels have}} been placed on this content"
 msgstr ""
 
 #: src/screens/Post/PostLikedBy.tsx:41
@@ -55,12 +55,8 @@ msgstr ""
 msgid "{0, plural, one {# quote} other {# quotes}}"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/RepostButton.tsx:69
-msgid "{0, plural, one {# repost} other {# reposts}}"
-msgstr ""
-
 #: src/screens/Post/PostRepostedBy.tsx:41
-msgid "{0, plural, one {# reposts} other {# reposts}}"
+msgid "{0, plural, one {# repost} other {# reposts}}"
 msgstr ""
 
 #: src/lib/hooks/useTimeAgo.ts:126
@@ -77,17 +73,8 @@ msgstr ""
 msgid "{0, plural, one {following} other {following}}"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:305
-msgid "{0, plural, one {Like (# like)} other {Like (# likes)}}"
-msgstr ""
-
 #: src/view/com/post-thread/PostThreadItem.tsx:447
 msgid "{0, plural, one {like} other {likes}}"
-msgstr ""
-
-#: src/components/FeedCard.tsx:213
-#: src/view/com/feeds/FeedSourceCard.tsx:303
-msgid "{0, plural, one {Liked by # user} other {Liked by # users}}"
 msgstr ""
 
 #: src/screens/Profile/Header/Metrics.tsx:58
@@ -98,16 +85,8 @@ msgstr ""
 msgid "{0, plural, one {quote} other {quotes}}"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:261
-msgid "{0, plural, one {Reply (# reply)} other {Reply (# replies)}}"
-msgstr ""
-
 #: src/view/com/post-thread/PostThreadItem.tsx:413
 msgid "{0, plural, one {repost} other {reposts}}"
-msgstr ""
-
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:301
-msgid "{0, plural, one {Unlike (# like)} other {Unlike (# likes)}}"
 msgstr ""
 
 #: src/screens/Settings/Settings.tsx:422
@@ -179,10 +158,6 @@ msgstr ""
 
 #: src/view/shell/bottom-bar/BottomBarWeb.tsx:252
 msgid "{badge} unread items"
-msgstr ""
-
-#: src/components/LabelingServiceCard/index.tsx:96
-msgid "{count, plural, one {Liked by # user} other {Liked by # users}}"
 msgstr ""
 
 #: src/view/shell/desktop/LeftNav.tsx:186
@@ -297,12 +272,6 @@ msgstr ""
 
 #: src/components/dms/dialogs/SearchablePeopleList.tsx:385
 msgid "{handle} can't be messaged"
-msgstr ""
-
-#: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:294
-#: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:307
-#: src/view/screens/ProfileFeed.tsx:590
-msgid "{likeCount, plural, one {Liked by # user} other {Liked by # users}}"
 msgstr ""
 
 #: src/view/shell/Drawer.tsx:448
@@ -545,7 +514,7 @@ msgstr ""
 msgid "Add the following DNS record to your domain:"
 msgstr ""
 
-#: src/components/FeedCard.tsx:296
+#: src/components/FeedCard.tsx:295
 msgid "Add this feed to your feeds"
 msgstr ""
 
@@ -876,11 +845,11 @@ msgstr ""
 msgid "Are you sure you want to leave this conversation? Your messages will be deleted for you, but not for the other participant."
 msgstr ""
 
-#: src/view/com/feeds/FeedSourceCard.tsx:316
+#: src/view/com/feeds/FeedSourceCard.tsx:319
 msgid "Are you sure you want to remove {0} from your feeds?"
 msgstr ""
 
-#: src/components/FeedCard.tsx:313
+#: src/components/FeedCard.tsx:312
 msgid "Are you sure you want to remove this from your feeds?"
 msgstr ""
 
@@ -1175,7 +1144,7 @@ msgstr ""
 #: src/view/com/modals/LinkWarning.tsx:107
 #: src/view/com/modals/VerifyEmail.tsx:255
 #: src/view/com/modals/VerifyEmail.tsx:261
-#: src/view/com/util/post-ctrls/RepostButton.tsx:203
+#: src/view/com/util/post-ctrls/RepostButton.tsx:213
 #: src/view/screens/Search/Search.tsx:886
 msgid "Cancel"
 msgstr ""
@@ -1200,7 +1169,7 @@ msgstr ""
 msgid "Cancel profile editing"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/RepostButton.tsx:197
+#: src/view/com/util/post-ctrls/RepostButton.tsx:207
 msgid "Cancel quote post"
 msgstr ""
 
@@ -1674,7 +1643,7 @@ msgstr ""
 #: src/lib/sharing.ts:25
 #: src/view/com/modals/InviteCodes.tsx:153
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:235
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:386
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:392
 msgid "Copied to clipboard"
 msgstr ""
 
@@ -2693,7 +2662,7 @@ msgstr ""
 msgid "Failed to toggle thread mute, please try again"
 msgstr ""
 
-#: src/components/FeedCard.tsx:276
+#: src/components/FeedCard.tsx:275
 msgid "Failed to update feeds"
 msgstr ""
 
@@ -2751,7 +2720,7 @@ msgstr ""
 msgid "Feeds are custom algorithms that users build with a little coding expertise. <0/> for more information."
 msgstr ""
 
-#: src/components/FeedCard.tsx:273
+#: src/components/FeedCard.tsx:272
 #: src/view/screens/SavedFeeds.tsx:82
 msgid "Feeds updated!"
 msgstr ""
@@ -3573,6 +3542,10 @@ msgstr ""
 msgid "Light"
 msgstr ""
 
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:310
+msgid "Like ({0, plural, one {# like} other {# likes}})"
+msgstr ""
+
 #: src/components/ProgressGuide/List.tsx:47
 msgid "Like 10 posts"
 msgstr ""
@@ -3597,6 +3570,18 @@ msgstr ""
 #: src/screens/Profile/ProfileLabelerLikedBy.tsx:29
 #: src/view/screens/ProfileFeedLikedBy.tsx:30
 msgid "Liked By"
+msgstr ""
+
+#: src/components/FeedCard.tsx:213
+#: src/view/com/feeds/FeedSourceCard.tsx:303
+msgid "Liked by {0, plural, one {# user} other {# users}}"
+msgstr ""
+
+#: src/components/LabelingServiceCard/index.tsx:96
+#: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:295
+#: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:309
+#: src/view/screens/ProfileFeed.tsx:590
+msgid "Liked by {likeCount, plural, one {# user} other {# users}}"
 msgstr ""
 
 #: src/view/screens/Profile.tsx:228
@@ -4317,7 +4302,7 @@ msgstr ""
 
 #: src/view/com/profile/ProfileMenu.tsx:348
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:686
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:350
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:356
 msgid "Note about sharing"
 msgstr ""
 
@@ -4389,7 +4374,7 @@ msgstr ""
 msgid "Oh no! Something went wrong."
 msgstr ""
 
-#: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:347
+#: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:352
 #: src/screens/Settings/AppIconSettings/index.tsx:48
 #: src/screens/Settings/AppIconSettings/index.tsx:229
 msgid "OK"
@@ -5040,8 +5025,8 @@ msgstr ""
 msgid "QR code saved to your camera roll!"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/RepostButton.tsx:168
-#: src/view/com/util/post-ctrls/RepostButton.tsx:191
+#: src/view/com/util/post-ctrls/RepostButton.tsx:178
+#: src/view/com/util/post-ctrls/RepostButton.tsx:201
 #: src/view/com/util/post-ctrls/RepostButton.web.tsx:85
 #: src/view/com/util/post-ctrls/RepostButton.web.tsx:92
 msgid "Quote post"
@@ -5055,8 +5040,8 @@ msgstr ""
 msgid "Quote post was successfully detached"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/RepostButton.tsx:167
-#: src/view/com/util/post-ctrls/RepostButton.tsx:189
+#: src/view/com/util/post-ctrls/RepostButton.tsx:177
+#: src/view/com/util/post-ctrls/RepostButton.tsx:199
 #: src/view/com/util/post-ctrls/RepostButton.web.tsx:84
 #: src/view/com/util/post-ctrls/RepostButton.web.tsx:91
 msgid "Quote posts disabled"
@@ -5131,11 +5116,11 @@ msgid "Reload conversations"
 msgstr ""
 
 #: src/components/dialogs/MutedWords.tsx:438
-#: src/components/FeedCard.tsx:316
+#: src/components/FeedCard.tsx:315
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:101
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:108
 #: src/screens/Settings/Settings.tsx:466
-#: src/view/com/feeds/FeedSourceCard.tsx:319
+#: src/view/com/feeds/FeedSourceCard.tsx:322
 #: src/view/com/modals/ListAddRemoveUsers.tsx:269
 #: src/view/com/modals/UserAddRemoveLists.tsx:235
 #: src/view/com/posts/PostFeedErrorMessage.tsx:213
@@ -5186,8 +5171,8 @@ msgstr ""
 msgid "Remove from my feeds"
 msgstr ""
 
-#: src/components/FeedCard.tsx:311
-#: src/view/com/feeds/FeedSourceCard.tsx:314
+#: src/components/FeedCard.tsx:310
+#: src/view/com/feeds/FeedSourceCard.tsx:317
 msgid "Remove from my feeds?"
 msgstr ""
 
@@ -5219,8 +5204,8 @@ msgstr ""
 msgid "Remove quote"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/RepostButton.tsx:145
 #: src/view/com/util/post-ctrls/RepostButton.tsx:155
+#: src/view/com/util/post-ctrls/RepostButton.tsx:165
 msgid "Remove repost"
 msgstr ""
 
@@ -5284,6 +5269,10 @@ msgstr ""
 #: src/view/com/composer/Composer.tsx:933
 msgctxt "action"
 msgid "Reply"
+msgstr ""
+
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:262
+msgid "Reply ({0, plural, one {# reply} other {# replies}})"
 msgstr ""
 
 #: src/components/moderation/ModerationDetailsDialog.tsx:114
@@ -5408,9 +5397,8 @@ msgstr ""
 msgid "Report this user"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/RepostButton.tsx:68
-#: src/view/com/util/post-ctrls/RepostButton.tsx:146
-#: src/view/com/util/post-ctrls/RepostButton.tsx:157
+#: src/view/com/util/post-ctrls/RepostButton.tsx:156
+#: src/view/com/util/post-ctrls/RepostButton.tsx:167
 msgctxt "action"
 msgid "Repost"
 msgstr ""
@@ -5420,8 +5408,12 @@ msgstr ""
 msgid "Repost"
 msgstr ""
 
+#: src/view/com/util/post-ctrls/RepostButton.tsx:74
+msgid "Repost ({0, plural, one {# repost} other {# reposts}})"
+msgstr ""
+
 #: src/screens/StarterPack/StarterPackScreen.tsx:547
-#: src/view/com/util/post-ctrls/RepostButton.tsx:138
+#: src/view/com/util/post-ctrls/RepostButton.tsx:148
 #: src/view/com/util/post-ctrls/RepostButton.web.tsx:49
 #: src/view/com/util/post-ctrls/RepostButton.web.tsx:104
 msgid "Repost or quote post"
@@ -5926,7 +5918,7 @@ msgstr ""
 #: src/view/com/profile/ProfileMenu.tsx:204
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:434
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:443
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:339
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:345
 #: src/view/screens/ProfileList.tsx:486
 msgid "Share"
 msgstr ""
@@ -5946,7 +5938,7 @@ msgstr ""
 
 #: src/view/com/profile/ProfileMenu.tsx:353
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:691
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:355
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:361
 msgid "Share anyway"
 msgstr ""
 
@@ -6224,7 +6216,7 @@ msgstr ""
 msgid "Something went wrong!"
 msgstr ""
 
-#: src/App.native.tsx:118
+#: src/App.native.tsx:119
 #: src/App.web.tsx:94
 msgid "Sorry! Your session expired. Please log in again."
 msgstr ""
@@ -6830,7 +6822,7 @@ msgid "This post has been deleted."
 msgstr ""
 
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:688
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:352
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:358
 msgid "This post is only visible to logged-in users. It won't be visible to people who aren't logged in."
 msgstr ""
 
@@ -7043,10 +7035,13 @@ msgstr ""
 msgid "Unblock Account?"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/RepostButton.tsx:67
 #: src/view/com/util/post-ctrls/RepostButton.web.tsx:72
 #: src/view/com/util/post-ctrls/RepostButton.web.tsx:76
 msgid "Undo repost"
+msgstr ""
+
+#: src/view/com/util/post-ctrls/RepostButton.tsx:68
+msgid "Undo repost ({0, plural, one {# repost} other {# reposts}})"
 msgstr ""
 
 #: src/view/com/profile/FollowButton.tsx:60
@@ -7061,6 +7056,10 @@ msgstr ""
 #: src/view/com/profile/ProfileMenu.tsx:221
 #: src/view/com/profile/ProfileMenu.tsx:231
 msgid "Unfollow Account"
+msgstr ""
+
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:304
+msgid "Unlike ({0, plural, one {# like} other {# likes}})"
 msgstr ""
 
 #: src/view/screens/ProfileFeed.tsx:575
@@ -7468,7 +7467,7 @@ msgstr ""
 msgid "View the avatar"
 msgstr ""
 
-#: src/components/LabelingServiceCard/index.tsx:162
+#: src/components/LabelingServiceCard/index.tsx:164
 msgid "View the labeling service provided by @{0}"
 msgstr ""
 
@@ -7593,7 +7592,7 @@ msgstr ""
 msgid "We're sorry! We can't find the page you were looking for."
 msgstr ""
 
-#: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:341
+#: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:346
 msgid "We're sorry! You can only subscribe to twenty labelers, and you've reached your limit of twenty."
 msgstr ""
 
