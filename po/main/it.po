@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-12 09:29+0000\n"
-"PO-Revision-Date: 2024-12-12 11:16+0000\n"
+"PO-Revision-Date: 2024-12-12 11:26+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
@@ -46,11 +46,11 @@ msgstr "{0, plural, one {# ora} other {# ore}}"
 
 #: src/components/moderation/LabelsOnMe.tsx:53
 msgid "{0, plural, one {# label has} other {# labels have}} been placed on this account"
-msgstr ""
+msgstr "{0, plural, one {# etichetta è stata applicata} other {# etichette sono state applicate}} a questo account"
 
 #: src/components/moderation/LabelsOnMe.tsx:62
 msgid "{0, plural, one {# label has} other {# labels have}} been placed on this content"
-msgstr ""
+msgstr "{0, plural, one {# etichetta è stata applicata} other {# etichette sono state applicate}} a questo contenuto"
 
 #: src/screens/Post/PostLikedBy.tsx:41
 msgid "{0, plural, one {# like} other {# likes}}"
@@ -3557,7 +3557,7 @@ msgstr "Chiaro"
 
 #: src/view/com/util/post-ctrls/PostCtrls.tsx:310
 msgid "Like ({0, plural, one {# like} other {# likes}})"
-msgstr ""
+msgstr "Mi piace ({0, plural, one {# mi piace} other {# mi piace}})"
 
 #: src/components/ProgressGuide/List.tsx:47
 msgid "Like 10 posts"
@@ -3588,14 +3588,14 @@ msgstr "Piace a"
 #: src/components/FeedCard.tsx:213
 #: src/view/com/feeds/FeedSourceCard.tsx:303
 msgid "Liked by {0, plural, one {# user} other {# users}}"
-msgstr ""
+msgstr "Piace a {0, plural, one {# utente} other {# utenti}}"
 
 #: src/components/LabelingServiceCard/index.tsx:96
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:295
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:309
 #: src/view/screens/ProfileFeed.tsx:590
 msgid "Liked by {likeCount, plural, one {# user} other {# users}}"
-msgstr ""
+msgstr "Piace a {likeCount, plural, one {# utente} other {# utenti}}"
 
 #: src/view/screens/Profile.tsx:228
 msgid "Likes"
@@ -5286,7 +5286,7 @@ msgstr "Rispondi"
 
 #: src/view/com/util/post-ctrls/PostCtrls.tsx:262
 msgid "Reply ({0, plural, one {# reply} other {# replies}})"
-msgstr ""
+msgstr "Rispondi ({0, plural, one {# risposta} other {# risposte}})"
 
 #: src/components/moderation/ModerationDetailsDialog.tsx:114
 #: src/lib/moderation/useModerationCauseDescription.ts:123
@@ -5423,7 +5423,7 @@ msgstr "Repost"
 
 #: src/view/com/util/post-ctrls/RepostButton.tsx:74
 msgid "Repost ({0, plural, one {# repost} other {# reposts}})"
-msgstr ""
+msgstr "Ripubblica ({0, plural, one {# ripubblicazione} other {# ripubblicazioni}})"
 
 #: src/screens/StarterPack/StarterPackScreen.tsx:547
 #: src/view/com/util/post-ctrls/RepostButton.tsx:148
@@ -7055,7 +7055,7 @@ msgstr "Annulla ripubblicazione"
 
 #: src/view/com/util/post-ctrls/RepostButton.tsx:68
 msgid "Undo repost ({0, plural, one {# repost} other {# reposts}})"
-msgstr ""
+msgstr "Annulla ripubblicazione ({0, plural, one {# ripubblicazione} other {# ripubblicazioni}})"
 
 #: src/view/com/profile/FollowButton.tsx:60
 msgctxt "action"
@@ -7073,7 +7073,7 @@ msgstr "Smetti di seguire questo account"
 
 #: src/view/com/util/post-ctrls/PostCtrls.tsx:304
 msgid "Unlike ({0, plural, one {# like} other {# likes}})"
-msgstr ""
+msgstr "Non mi piace più ({0, plural, one {# mi piace} other {# mi piace}})"
 
 #: src/view/screens/ProfileFeed.tsx:575
 msgid "Unlike this feed"
