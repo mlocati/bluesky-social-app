@@ -1,4 +1,4 @@
-name: Fetch PO file
+name: Update PR branch
 
 on:
   workflow_dispatch:
@@ -14,8 +14,8 @@ on:
         required: false
 
 jobs:
-  fetch-po-file:
-    name: Fetch PO file
+  update-pr-branch:
+    name: Update PR branch
     runs-on: ubuntu-latest
     steps:
       -
@@ -62,7 +62,7 @@ jobs:
             find * -maxdepth 0 -type d
             exit 1
           fi
-          MY_SOURCE_PO='https://github.com/mlocati/bluesky-social-app-pot/raw/refs/heads/main/po/main/${{ steps.parse-inputs.outputs.locale-id }}.po'
+          MY_SOURCE_PO='https://github.com/mlocati/bluesky-social-app/raw/refs/heads/transifex-bridge/po/main/${{ steps.parse-inputs.outputs.locale-id }}.po'
           curl -sSLf -o "$MY_TARGET_PO" "$MY_SOURCE_PO"
           if git diff --exit-code "$MY_TARGET_PO"; then
             echo 'No changes'
