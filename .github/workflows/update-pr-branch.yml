@@ -41,15 +41,21 @@ jobs:
         with:
           ref: ${{ steps.parse-inputs.outputs.target-branch }}
       -
-        name: Checkout main branch
+        name: Checkout default branch
         if: steps.checkout-target-branch.outcome == 'failure'
         uses: actions/checkout@v4
-        with:
-          ref: main
+      -
+        name: Add upstream repository
+        if: steps.checkout-target-branch.outcome == 'failure'
+        run: git remote add upstream https://github.com/bluesky-social/social-app.git
+      -
+        name: Fetch upstream repository
+        if: steps.checkout-target-branch.outcome == 'failure'
+        run: git fetch upstream main
       -
         name: Create ${{ steps.parse-inputs.outputs.target-branch }} branch
         if: steps.checkout-target-branch.outcome == 'failure'
-        run: git checkout -b '${{ steps.parse-inputs.outputs.target-branch }}'
+        run: git checkout -b '${{ steps.parse-inputs.outputs.target-branch }}' upstream/main
       -
         name: Fetch new .po file
         id: fetch-po
