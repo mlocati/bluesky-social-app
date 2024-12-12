@@ -1,4 +1,4 @@
-## Translatable strings for Bluesky
+## Unifficial bridge between Bluesky repo and unofficial Transifex project
 
 This (unofficial) repository is a bridge between the official [Bluesky repository](https://github.com/bluesky-social/social-app) and the unofficial [Transifex project](https://app.transifex.com/mlocati/bluesky-unofficial) thay may be used by translate Bluesky in a collaborative way.
 
