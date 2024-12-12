@@ -10,11 +10,11 @@ This repository performs the following tasks:
 
 ### Download .po files from Transifex
 
-[Another GitHub Action](https://github.com/mlocati/bluesky-social-app/actions/workflows/download-po-files.yml) downloads the .po files from Transifex and stores them in the [`po` directory](https://github.com/mlocati/bluesky-social-app/tree/transifex-bridge/po)
+[Another GitHub Action](https://github.com/mlocati/bluesky-social-app/actions/workflows/download-po-files.yml) downloads the .po files from Transifex and stores them in the [`po` directory](https://github.com/mlocati/bluesky-social-app/tree/transifex-bridge/po).
 
 ### Update branches for pull requests
 
-[Another GitHub Action](https://github.com/mlocati/bluesky-social-app/actions/workflows/download-po-files.yml) downloads the .po files from Transifex and stores them in the [`po` directory](https://github.com/mlocati/bluesky-social-app/tree/transifex-bridge/po)
+[Yet nother GitHub Action](https://github.com/mlocati/bluesky-social-app/actions/workflows/update-pr-branch.yml) creates or updates branches in this repository to be used for pull requests in the [official repository](https://github.com/bluesky-social/social-app), using the files in the [`po` directory](https://github.com/mlocati/bluesky-social-app/tree/transifex-bridge/po).
 
 ## Notifications
 
