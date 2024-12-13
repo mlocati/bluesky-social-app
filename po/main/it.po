@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-13 00:48+0000\n"
-"PO-Revision-Date: 2024-12-13 02:14+0000\n"
+"PO-Revision-Date: 2024-12-13 07:27+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
@@ -583,7 +583,7 @@ msgstr "Allenamento dell'algoritmo completato!"
 
 #: src/view/screens/Notifications.tsx:86
 msgid "All"
-msgstr ""
+msgstr "Tutto"
 
 #: src/screens/StarterPack/StarterPackScreen.tsx:381
 msgid "All accounts have been followed!"
@@ -605,7 +605,7 @@ msgstr "Consenti nuovi messaggi da"
 
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:314
 msgid "Allow quote posts"
-msgstr ""
+msgstr "Permetti citazioni"
 
 #: src/components/dialogs/PostInteractionSettingsDialog.tsx:359
 msgid "Allow replies from:"
@@ -1121,7 +1121,7 @@ msgstr "di <0/>"
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:414
 msgid "By <0>{0}</0>"
-msgstr ""
+msgstr "Di <0>{0}</0>"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:81
 msgid "By creating an account you agree to the <0>Privacy Policy</0>."
@@ -2717,7 +2717,7 @@ msgstr "Feed creato da {0}"
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:318
 msgid "Feed menu"
-msgstr ""
+msgstr "Menu del feed"
 
 #: src/components/StarterPack/Wizard/WizardListCard.tsx:54
 msgid "Feed toggle"
@@ -3573,7 +3573,7 @@ msgstr "Chiaro"
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:481
 msgid "Like"
-msgstr ""
+msgstr "Mi piace"
 
 #: src/view/com/util/post-ctrls/PostCtrls.tsx:310
 msgid "Like ({0, plural, one {# like} other {# likes}})"
@@ -3590,7 +3590,7 @@ msgstr "Metti like a 10 post per allenare il feed Scopri"
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:468
 msgid "Like feed"
-msgstr ""
+msgstr "Feed dei mi piace"
 
 #: src/screens/Profile/Header/ProfileHeaderLabeler.tsx:275
 msgid "Like this feed"
@@ -3806,7 +3806,7 @@ msgstr "Utenti menzionati"
 
 #: src/view/screens/Notifications.tsx:99
 msgid "Mentions"
-msgstr ""
+msgstr "Menzioni"
 
 #: src/components/Menu/index.tsx:96
 #: src/view/screens/Search/Search.tsx:855
@@ -4515,7 +4515,7 @@ msgstr "Apri il selettore emoji"
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:160
 msgid "Open feed info screen"
-msgstr ""
+msgstr "Apri schermata con informazioni sul feed"
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:255
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:260
@@ -4745,7 +4745,7 @@ msgstr "Immagini consigliate ad un pubblico adulto."
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:486
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:493
 msgid "Pin feed"
-msgstr ""
+msgstr "Fissa feed"
 
 #: src/view/screens/ProfileList.tsx:675
 msgid "Pin to home"
@@ -4767,7 +4767,7 @@ msgstr "Fissato"
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:127
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:139
 msgid "Pinned {0} to Home"
-msgstr ""
+msgstr "{0} fissato su home"
 
 #: src/view/screens/SavedFeeds.tsx:123
 msgid "Pinned Feeds"
@@ -6008,7 +6008,7 @@ msgstr "Condividi codice QR"
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:437
 msgid "Share this feed"
-msgstr ""
+msgstr "Condividi questo feed"
 
 #: src/screens/StarterPack/StarterPackScreen.tsx:415
 msgid "Share this starter pack"
@@ -6261,7 +6261,7 @@ msgstr "Qualcosa è andato storto!"
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:505
 msgid "Something wrong? Let us know."
-msgstr ""
+msgstr "Qualcosa non va? Faccelo sapere."
 
 #: src/App.native.tsx:120
 #: src/App.web.tsx:95
@@ -7107,7 +7107,7 @@ msgstr "Smetti di seguire questo account"
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:481
 msgid "Unlike"
-msgstr ""
+msgstr "Non mi piace più"
 
 #: src/view/com/util/post-ctrls/PostCtrls.tsx:304
 msgid "Unlike ({0, plural, one {# like} other {# likes}})"
@@ -7157,7 +7157,7 @@ msgstr "Non fissare più"
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:486
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:493
 msgid "Unpin feed"
-msgstr ""
+msgstr "Non fissare più il feed"
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:274
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:276
@@ -7175,7 +7175,7 @@ msgstr "Non fissare più la lista di moderazione"
 
 #: src/screens/Profile/components/ProfileFeedHeader.tsx:129
 msgid "Unpinned {0} from Home"
-msgstr ""
+msgstr "{0} non più fissato su home"
 
 #: src/view/screens/ProfileList.tsx:355
 msgid "Unpinned from your feeds"
