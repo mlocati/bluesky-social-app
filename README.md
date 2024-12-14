@@ -6,7 +6,7 @@ This repository performs the following tasks:
 
 ### Maintain .pot files
 
-[A GitHub Action](https://github.com/mlocati/bluesky-social-app/actions/workflows/update-pot-files.yml) running on a scheduled basis which keeps the [`pot` directory](https://github.com/mlocati/bluesky-social-app/tree/transifex-bridge/pot) up to date. Transifex is configured so that its translatable resources are updated automatically by periodically downloading these .pot files.
+[A GitHub Action](https://github.com/mlocati/bluesky-social-app/actions/workflows/update-pot-files.yml) running on a scheduled basis keeps the [`pot` directory](https://github.com/mlocati/bluesky-social-app/tree/transifex-bridge/pot) up to date. Transifex is configured so that its translatable resources are updated automatically by periodically downloading these .pot files.
 
 ### Download .po files from Transifex
 
