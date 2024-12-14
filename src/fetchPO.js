@@ -2,6 +2,7 @@ import { transifexApi as TX } from '@transifex/api';
 import path from 'node:path';
 import fs from 'node:fs';
 import POFile from './POFile.js';
+import checkPO from './checkPO.js';
 
 const TX_ORGANIZATION_SLUG = 'mlocati';
 const TX_PROJECT_SLUG = 'bluesky-unofficial'
@@ -76,6 +77,7 @@ async function fetchPO(txToken, outputDirectory, ghOutput = '')
             }
             if (poIsNew) {
                 fs.writeFileSync(poFilePath, poFile.toString(), {encoding: 'utf8'});
+                checkPO(poFilePath, false);
                 process.stdout.write('updated.\n');
                 updated = true;
             } else {

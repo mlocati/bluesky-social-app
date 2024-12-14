@@ -1,6 +1,7 @@
 import { Command } from 'commander';
 import fetchPO from './src/fetchPO.js';
 import updatePOT from './src/updatePOT.js';
+import checkPO from './src/checkPO.js';
 
 const program = new Command();
 program
@@ -18,6 +19,11 @@ program.command('fetch-po')
     .argument('<token>', 'the Transifex API token')
     .argument('<output>', 'where to store the downloaded .po files')
     .action(fetchPO)
+;
+program.command('check-po')
+    .description('Check if a .po file is valid.')
+    .argument('<file>', 'the path of the .po file to be checked')
+    .action(checkPO)
 ;
 
 await program.parseAsync();
