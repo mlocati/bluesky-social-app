@@ -49,7 +49,7 @@ async function fetchPO(txToken, outputDirectory, ghOutput = '')
     }
     let updated = false;
     for (const txResource of txResources) {
-        process.stdout.write(`Processing resource ${txResource.get('slug')}\n`);
+        process.stdout.write(`Processing resource ${txResource.get('slug')}:\n`);
         const resourceDir = path.resolve(outputDirectory, txResource.get('slug'));
         if (!fs.existsSync(resourceDir)) {
             fs.mkdirSync(resourceDir);
