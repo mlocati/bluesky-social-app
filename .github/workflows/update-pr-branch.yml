@@ -8,10 +8,17 @@ on:
         type: string
         default: it
         required: true
-      target-branch:
-        description: Target branch
+      base-branch:
+        description: Upstream base branch
+        type: string
+        default: main
+        required: false
+      pr-branch:
+        description: Pull request branch
         type: string
         required: false
+        # @todo remove following line once https://github.com/bluesky-social/social-app/pull/6775 gets merged
+        default: update-it
 
 jobs:
   update-pr-branch:
@@ -21,41 +28,48 @@ jobs:
       -
         name: Parse inputs
         id: parse-inputs
+        env:
+          LOCALE_ID: ${{ inputs.locale-id }}
+          BASE_BRANCH: ${{ inputs.base-branch }}
+          PR_BRANCH: ${{ inputs.pr-branch }}
         run: |
-          if ! grep -qE '^[a-z]{2}(-[A-Z]{2,3})?$' <<< '${{ inputs.locale-id }}'; then
+          if ! grep -qE '^[a-z]{2}(-[A-Z]{2,3})?$' <<< "$LOCALE_ID"; then
             echo 'Invalid locale ID'
             exit 1
           fi
-          echo 'locale-id=${{ inputs.locale-id }}' >>"$GITHUB_OUTPUT"
-
-          if [ -z '${{ inputs.target-branch }}' ]; then
-            echo 'target-branch=update-${{ inputs.locale-id }}' >>"$GITHUB_OUTPUT"
-          else
-            echo 'target-branch=${{ inputs.target-branch }}' >>"$GITHUB_OUTPUT"
+          if [ -z "$BASE_BRANCH" ]; then
+            BASE_BRANCH=main
           fi
+          if [ -z "$PR_BRANCH" ]; then
+            PR_BRANCH=update-$BASE_BRANCH-$LOCALE_ID
+          fi
+          echo "locale-id=$LOCALE_ID" >>"$GITHUB_OUTPUT"
+          echo "base-branch=$BASE_BRANCH" >>"$GITHUB_OUTPUT"
+          echo "pr-branch=$PR_BRANCH" >>"$GITHUB_OUTPUT"
+          cat "$GITHUB_OUTPUT"
       -
-        name: Checkout ${{ steps.parse-inputs.outputs.target-branch }} branch
-        id: checkout-target-branch
+        name: Checkout ${{ steps.parse-inputs.outputs.pr-branch }} branch
+        id: checkout-pr-branch
         continue-on-error: true
         uses: actions/checkout@v4
         with:
-          ref: ${{ steps.parse-inputs.outputs.target-branch }}
+          ref: ${{ steps.parse-inputs.outputs.pr-branch }}
       -
         name: Checkout default branch
-        if: steps.checkout-target-branch.outcome == 'failure'
+        if: steps.checkout-pr-branch.outcome == 'failure'
         uses: actions/checkout@v4
       -
         name: Add upstream repository
-        if: steps.checkout-target-branch.outcome == 'failure'
+        if: steps.checkout-pr-branch.outcome == 'failure'
         run: git remote add upstream https://github.com/bluesky-social/social-app.git
       -
-        name: Fetch upstream repository
-        if: steps.checkout-target-branch.outcome == 'failure'
-        run: git fetch upstream main
+        name: Fetch ${{ steps.parse-inputs.outputs.base-branch }} branch of upstream repository
+        if: steps.checkout-pr-branch.outcome == 'failure'
+        run: git fetch upstream '${{ steps.parse-inputs.outputs.base-branch }}'
       -
-        name: Create ${{ steps.parse-inputs.outputs.target-branch }} branch
-        if: steps.checkout-target-branch.outcome == 'failure'
-        run: git checkout -b '${{ steps.parse-inputs.outputs.target-branch }}' upstream/main
+        name: Create ${{ steps.parse-inputs.outputs.pr-branch }} branch based on ${{ steps.parse-inputs.outputs.base-branch }}
+        if: steps.checkout-pr-branch.outcome == 'failure'
+        run: git checkout -b '${{ steps.parse-inputs.outputs.pr-branch }}' 'upstream/${{ steps.parse-inputs.outputs.base-branch }}'
       -
         name: Fetch new .po file
         id: fetch-po
@@ -68,9 +82,9 @@ jobs:
             find * -maxdepth 0 -type d
             exit 1
           fi
-          MY_SOURCE_PO='https://github.com/mlocati/bluesky-social-app/raw/refs/heads/transifex-bridge/po/main/${{ steps.parse-inputs.outputs.locale-id }}.po'
+          MY_SOURCE_PO='https://github.com/mlocati/bluesky-social-app/raw/refs/heads/transifex-bridge/po/${{ steps.parse-inputs.outputs.base-branch }}/${{ steps.parse-inputs.outputs.locale-id }}.po'
           curl -sSLf -o "$MY_TARGET_PO" "$MY_SOURCE_PO"
-          if git diff --exit-code "$MY_TARGET_PO"; then
+          if git diff --color=always --exit-code "$MY_TARGET_PO"; then
             echo 'No changes'
           else
             echo 'commit=yes' >>"$GITHUB_OUTPUT"
