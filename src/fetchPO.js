@@ -85,10 +85,8 @@ async function fetchPO(txToken, outputDirectory, ghOutput = '')
             }
         }
     }
-    if (process.env.GITHUB_OUTPUT) {
-        fs.appendFileSync(process.env.GITHUB_OUTPUT, `updated=${updated ? 'yes' : 'no'}\n`);
-    } else {
-        process.stdout.write('GITHUB_OUTPUT environment variable not defined');
+    if (ghOutput) {
+        fs.appendFileSync(ghOutput, `updated=${updated ? 'yes' : 'no'}\n`);
     }
 }
 

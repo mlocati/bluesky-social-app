@@ -82,7 +82,7 @@ jobs:
             find * -maxdepth 0 -type d
             exit 1
           fi
-          MY_SOURCE_PO='https://github.com/mlocati/bluesky-social-app/raw/refs/heads/transifex-bridge/po/${{ steps.parse-inputs.outputs.base-branch }}/${{ steps.parse-inputs.outputs.locale-id }}.po'
+          MY_SOURCE_PO='https://github.com/${{ github.repository }}/raw/refs/heads/transifex-bridge/po/${{ steps.parse-inputs.outputs.base-branch }}/${{ steps.parse-inputs.outputs.locale-id }}.po'
           curl -sSLf -o "$MY_TARGET_PO" "$MY_SOURCE_PO"
           if git diff --color=always --exit-code "$MY_TARGET_PO"; then
             echo 'No changes'

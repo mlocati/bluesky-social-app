@@ -2,7 +2,13 @@ import path from 'node:path';
 import POFile from './POFile.js';
 import fs from 'node:fs';
 
-function updatePOT(branch, potFile, outputDir)
+/**
+ * @param {string} branch 
+ * @param {string} potFile 
+ * @param {string} outputDir 
+ * @param {string} ghOutput 
+ */
+function updatePOT(branch, potFile, outputDir, ghOutput = '')
 {
     const newPOT = POFile.fromFile(potFile, true);
     if (!fs.existsSync(outputDir)) {
@@ -26,10 +32,8 @@ function updatePOT(branch, potFile, outputDir)
     if (updatePOT) {
         fs.copyFileSync(potFile, potFileOLD);
     }
-    if (process.env.GITHUB_OUTPUT) {
-        fs.appendFileSync(process.env.GITHUB_OUTPUT, `updated=${updatePOT ? 'yes' : 'no'}\n`);
-    } else {
-        process.stdout.write('GITHUB_OUTPUT environment variable not defined');
+    if (ghOutput) {
+        fs.appendFileSync(ghOutput, `updated=${updatePOT ? 'yes' : 'no'}\n`);
     }
 }
 

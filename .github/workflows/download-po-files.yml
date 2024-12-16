@@ -27,15 +27,17 @@ jobs:
         id: download-po-files
         env:
           TRANSIFEX_TOKEN: ${{ secrets.TRANSIFEX_TOKEN }}
-        run: node index fetch-po "$TRANSIFEX_TOKEN" po
+        run: node index fetch-po "$TRANSIFEX_TOKEN" po "$GITHUB_OUTPUT"
       -
         name: Commit
         if: steps.download-po-files.outputs.updated == 'yes'
+        id: commit
         run: |
           git add po
           git config user.name GitHub
           git config user.email noreply@github.com
           git commit -m 'Update po from Transifex'
+          echo "sha1=$(git rev-parse HEAD)" >>"$GITHUB_OUTPUT"
           git push
       -
         name: Notify update
@@ -45,7 +47,9 @@ jobs:
           token: ${{ secrets.TG_BOT_TOKEN }}
           to: ${{ secrets.TG_CHAT_ID }}
           disable_web_page_preview: true
-          message: Action https://github.com/mlocati/bluesky-social-app/actions/runs/${{ github.run_id }} updated the .po files from Transifex
+          message: |
+            Action https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} updated the .po files from Transifex.
+            See commit https://github.com/${{ github.repository }}/commit/${{ steps.commit.outputs.sha1 }}
       -
         name: Notify failures
         if: failure()
@@ -54,4 +58,4 @@ jobs:
           token: ${{ secrets.TG_BOT_TOKEN }}
           to: ${{ secrets.TG_CHAT_ID }}
           disable_web_page_preview: true
-          message: Downloading PO files from Transifex failed on https://github.com/mlocati/bluesky-social-app/actions/runs/${{ github.run_id }}
+          message: Downloading PO files from Transifex failed on https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
