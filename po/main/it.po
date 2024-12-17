@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-17 00:47+0000\n"
-"PO-Revision-Date: 2024-12-17 02:12+0000\n"
+"PO-Revision-Date: 2024-12-17 05:43+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
@@ -1345,7 +1345,7 @@ msgstr "Scegli la tua password"
 
 #: src/screens/Signup/index.tsx:142
 msgid "Choose your username"
-msgstr ""
+msgstr "Scegli il tuo nome utente"
 
 #: src/screens/Settings/Settings.tsx:350
 msgid "Clear all storage data"
@@ -7017,7 +7017,7 @@ msgstr "Autenticazione a due fattori (2FA)"
 
 #: src/screens/Signup/StepHandle.tsx:114
 msgid "Type your desired username"
-msgstr ""
+msgstr "Inserisci il nome utente che desideri utilizzare"
 
 #: src/screens/Messages/components/MessageInput.tsx:148
 msgid "Type your message here"
@@ -8101,7 +8101,7 @@ msgstr "Il tuo nome utente completo sarà <0>@{0}</0>"
 
 #: src/screens/Signup/StepHandle.tsx:125
 msgid "Your full username will be"
-msgstr ""
+msgstr "Il tuo nome utente completo sarà"
 
 #: src/components/dialogs/MutedWords.tsx:369
 msgid "Your muted words"
