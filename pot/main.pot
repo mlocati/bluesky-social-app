@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2024-12-16 00:50+0000\n"
+"POT-Creation-Date: 2024-12-17 00:47+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -813,7 +813,7 @@ msgid "Appeal this decision"
 msgstr ""
 
 #: src/Navigation.tsx:330
-#: src/screens/Settings/AppearanceSettings.tsx:86
+#: src/screens/Settings/AppearanceSettings.tsx:85
 #: src/screens/Settings/Settings.tsx:183
 #: src/screens/Settings/Settings.tsx:186
 msgid "Appearance"
@@ -1187,9 +1187,9 @@ msgid "Cancels opening the linked website"
 msgstr ""
 
 #: src/state/shell/composer/index.tsx:82
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:116
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:157
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:193
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:117
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:158
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:194
 msgid "Cannot interact with a blocked user"
 msgstr ""
 
@@ -1330,6 +1330,10 @@ msgstr ""
 msgid "Choose your password"
 msgstr ""
 
+#: src/screens/Signup/index.tsx:142
+msgid "Choose your username"
+msgstr ""
+
 #: src/screens/Settings/Settings.tsx:350
 msgid "Clear all storage data"
 msgstr ""
@@ -1449,7 +1453,7 @@ msgstr ""
 msgid "Collapses list of users for a given notification"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:94
+#: src/screens/Settings/AppearanceSettings.tsx:93
 msgid "Color mode"
 msgstr ""
 
@@ -1643,7 +1647,7 @@ msgstr ""
 #: src/lib/sharing.ts:25
 #: src/view/com/modals/InviteCodes.tsx:153
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:235
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:392
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:393
 msgid "Copied to clipboard"
 msgstr ""
 
@@ -1804,8 +1808,8 @@ msgstr ""
 msgid "Customize who can interact with this post."
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:106
-#: src/screens/Settings/AppearanceSettings.tsx:127
+#: src/screens/Settings/AppearanceSettings.tsx:105
+#: src/screens/Settings/AppearanceSettings.tsx:126
 msgid "Dark"
 msgstr ""
 
@@ -1813,7 +1817,7 @@ msgstr ""
 msgid "Dark mode"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:119
+#: src/screens/Settings/AppearanceSettings.tsx:118
 msgid "Dark theme"
 msgstr ""
 
@@ -1835,7 +1839,7 @@ msgstr ""
 msgid "Debug panel"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:169
+#: src/screens/Settings/AppearanceSettings.tsx:168
 msgid "Default"
 msgstr ""
 
@@ -1969,7 +1973,7 @@ msgstr ""
 msgid "Dialog: adjust who can interact with this post"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:123
+#: src/screens/Settings/AppearanceSettings.tsx:122
 msgid "Dim"
 msgstr ""
 
@@ -2449,7 +2453,7 @@ msgid "Enter your username and password"
 msgstr ""
 
 #: src/view/com/composer/Composer.tsx:1637
-#: src/view/com/util/error/ErrorScreen.tsx:40
+#: src/view/com/util/error/ErrorScreen.tsx:42
 msgid "Error"
 msgstr ""
 
@@ -2712,7 +2716,7 @@ msgstr ""
 #: src/Navigation.tsx:397
 #: src/screens/StarterPack/StarterPackScreen.tsx:183
 #: src/view/screens/Feeds.tsx:508
-#: src/view/screens/Profile.tsx:230
+#: src/view/screens/Profile.tsx:235
 #: src/view/screens/SavedFeeds.tsx:96
 #: src/view/screens/Search/Search.tsx:518
 #: src/view/shell/desktop/LeftNav.tsx:445
@@ -2881,11 +2885,11 @@ msgstr ""
 msgid "Follows You"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:141
+#: src/screens/Settings/AppearanceSettings.tsx:140
 msgid "Font"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:161
+#: src/screens/Settings/AppearanceSettings.tsx:160
 msgid "Font size"
 msgstr ""
 
@@ -2902,7 +2906,7 @@ msgstr ""
 msgid "For security reasons, you won't be able to view this again. If you lose this app password, you'll need to generate a new one."
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:143
+#: src/screens/Settings/AppearanceSettings.tsx:142
 msgid "For the best experience, we recommend using the theme font."
 msgstr ""
 
@@ -3313,10 +3317,6 @@ msgstr ""
 msgid "Input your password"
 msgstr ""
 
-#: src/screens/Signup/StepHandle.tsx:114
-msgid "Input your user handle"
-msgstr ""
-
 #: src/view/com/composer/threadgate/ThreadgateBtn.tsx:49
 msgid "Interaction limited"
 msgstr ""
@@ -3421,7 +3421,7 @@ msgid "Labeled by the author."
 msgstr ""
 
 #: src/view/com/composer/labels/LabelsBtn.tsx:75
-#: src/view/screens/Profile.tsx:224
+#: src/view/screens/Profile.tsx:229
 msgid "Labels"
 msgstr ""
 
@@ -3455,7 +3455,7 @@ msgstr ""
 msgid "Languages"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:173
+#: src/screens/Settings/AppearanceSettings.tsx:172
 msgid "Larger"
 msgstr ""
 
@@ -3542,7 +3542,7 @@ msgstr ""
 msgid "Let's go!"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:102
+#: src/screens/Settings/AppearanceSettings.tsx:101
 msgid "Light"
 msgstr ""
 
@@ -3550,7 +3550,7 @@ msgstr ""
 msgid "Like"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:310
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:311
 msgid "Like ({0, plural, one {# like} other {# likes}})"
 msgstr ""
 
@@ -3595,7 +3595,7 @@ msgstr ""
 msgid "Liked by {likeCount, plural, one {# user} other {# users}}"
 msgstr ""
 
-#: src/view/screens/Profile.tsx:229
+#: src/view/screens/Profile.tsx:234
 msgid "Likes"
 msgstr ""
 
@@ -3658,8 +3658,8 @@ msgstr ""
 
 #: src/Navigation.tsx:134
 #: src/view/screens/Lists.tsx:62
-#: src/view/screens/Profile.tsx:225
-#: src/view/screens/Profile.tsx:232
+#: src/view/screens/Profile.tsx:230
+#: src/view/screens/Profile.tsx:237
 #: src/view/shell/desktop/LeftNav.tsx:463
 #: src/view/shell/Drawer.tsx:491
 msgid "Lists"
@@ -3771,7 +3771,7 @@ msgstr ""
 msgid "Mark as read"
 msgstr ""
 
-#: src/view/screens/Profile.tsx:228
+#: src/view/screens/Profile.tsx:233
 msgid "Media"
 msgstr ""
 
@@ -4129,7 +4129,7 @@ msgstr ""
 #: src/screens/Profile/ProfileFeed/index.tsx:209
 #: src/view/screens/Feeds.tsx:549
 #: src/view/screens/Notifications.tsx:165
-#: src/view/screens/Profile.tsx:490
+#: src/view/screens/Profile.tsx:495
 #: src/view/screens/ProfileList.tsx:246
 #: src/view/screens/ProfileList.tsx:279
 msgid "New post"
@@ -4309,7 +4309,7 @@ msgid "Non-sexual Nudity"
 msgstr ""
 
 #: src/Navigation.tsx:129
-#: src/view/screens/Profile.tsx:127
+#: src/view/screens/Profile.tsx:129
 msgid "Not Found"
 msgstr ""
 
@@ -4320,7 +4320,7 @@ msgstr ""
 
 #: src/view/com/profile/ProfileMenu.tsx:348
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:686
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:356
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:357
 msgid "Note about sharing"
 msgstr ""
 
@@ -4457,7 +4457,7 @@ msgstr ""
 #: src/screens/Settings/AppPasswords.tsx:59
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:104
 #: src/screens/Settings/NotificationSettings.tsx:54
-#: src/view/screens/Profile.tsx:127
+#: src/view/screens/Profile.tsx:129
 msgid "Oops!"
 msgstr ""
 
@@ -4926,7 +4926,7 @@ msgid "posts"
 msgstr ""
 
 #: src/screens/StarterPack/StarterPackScreen.tsx:184
-#: src/view/screens/Profile.tsx:226
+#: src/view/screens/Profile.tsx:231
 msgid "Posts"
 msgstr ""
 
@@ -5016,7 +5016,7 @@ msgid "Processing..."
 msgstr ""
 
 #: src/view/screens/DebugMod.tsx:919
-#: src/view/screens/Profile.tsx:357
+#: src/view/screens/Profile.tsx:362
 msgid "profile"
 msgstr ""
 
@@ -5277,7 +5277,7 @@ msgstr ""
 msgid "Replace with Discover"
 msgstr ""
 
-#: src/view/screens/Profile.tsx:227
+#: src/view/screens/Profile.tsx:232
 msgid "Replies"
 msgstr ""
 
@@ -5294,7 +5294,7 @@ msgctxt "action"
 msgid "Reply"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:262
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:263
 msgid "Reply ({0, plural, one {# reply} other {# replies}})"
 msgstr ""
 
@@ -5527,7 +5527,7 @@ msgid "Retries login"
 msgstr ""
 
 #: src/view/com/util/error/ErrorMessage.tsx:57
-#: src/view/com/util/error/ErrorScreen.tsx:76
+#: src/view/com/util/error/ErrorScreen.tsx:99
 msgid "Retries the last action, which errored out"
 msgstr ""
 
@@ -5542,7 +5542,7 @@ msgstr ""
 #: src/screens/Onboarding/StepInterests/index.tsx:220
 #: src/screens/Signup/BackNextButtons.tsx:53
 #: src/view/com/util/error/ErrorMessage.tsx:55
-#: src/view/com/util/error/ErrorScreen.tsx:74
+#: src/view/com/util/error/ErrorScreen.tsx:97
 #: src/view/com/util/post-embeds/VideoEmbedInner/VideoFallback.tsx:55
 #: src/view/com/util/post-embeds/VideoEmbedInner/VideoFallback.tsx:57
 msgid "Retry"
@@ -5941,7 +5941,7 @@ msgstr ""
 #: src/view/com/profile/ProfileMenu.tsx:204
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:434
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:443
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:345
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:346
 #: src/view/screens/ProfileList.tsx:479
 msgid "Share"
 msgstr ""
@@ -5961,7 +5961,7 @@ msgstr ""
 
 #: src/view/com/profile/ProfileMenu.tsx:353
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:691
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:361
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:362
 msgid "Share anyway"
 msgstr ""
 
@@ -6201,7 +6201,7 @@ msgstr ""
 msgid "Skip this flow"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:165
+#: src/screens/Settings/AppearanceSettings.tsx:164
 msgid "Smaller"
 msgstr ""
 
@@ -6308,7 +6308,7 @@ msgstr ""
 msgid "Starter pack is invalid"
 msgstr ""
 
-#: src/view/screens/Profile.tsx:231
+#: src/view/screens/Profile.tsx:236
 msgid "Starter Packs"
 msgstr ""
 
@@ -6395,8 +6395,8 @@ msgstr ""
 msgid "Switch Account"
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:98
-#: src/screens/Settings/AppearanceSettings.tsx:148
+#: src/screens/Settings/AppearanceSettings.tsx:97
+#: src/screens/Settings/AppearanceSettings.tsx:147
 msgid "System"
 msgstr ""
 
@@ -6617,7 +6617,7 @@ msgstr ""
 msgid "The verification code you have provided is invalid. Please make sure that you have used the correct verification link or request a new one."
 msgstr ""
 
-#: src/screens/Settings/AppearanceSettings.tsx:152
+#: src/screens/Settings/AppearanceSettings.tsx:151
 msgid "Theme"
 msgstr ""
 
@@ -6853,7 +6853,7 @@ msgid "This post has been deleted."
 msgstr ""
 
 #: src/view/com/util/forms/PostDropdownBtnMenuItems.tsx:688
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:358
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:359
 msgid "This post is only visible to logged-in users. It won't be visible to people who aren't logged in."
 msgstr ""
 
@@ -6989,7 +6989,7 @@ msgstr ""
 msgid "Translate"
 msgstr ""
 
-#: src/view/com/util/error/ErrorScreen.tsx:84
+#: src/view/com/util/error/ErrorScreen.tsx:103
 msgctxt "action"
 msgid "Try again"
 msgstr ""
@@ -7000,6 +7000,10 @@ msgstr ""
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:56
 msgid "Two-factor authentication (2FA)"
+msgstr ""
+
+#: src/screens/Signup/StepHandle.tsx:114
+msgid "Type your desired username"
 msgstr ""
 
 #: src/screens/Messages/components/MessageInput.tsx:148
@@ -7093,7 +7097,7 @@ msgstr ""
 msgid "Unlike"
 msgstr ""
 
-#: src/view/com/util/post-ctrls/PostCtrls.tsx:304
+#: src/view/com/util/post-ctrls/PostCtrls.tsx:305
 msgid "Unlike ({0, plural, one {# like} other {# likes}})"
 msgstr ""
 
@@ -8078,12 +8082,12 @@ msgstr ""
 msgid "Your following feed is empty! Follow more users to see what's happening."
 msgstr ""
 
-#: src/screens/Signup/StepHandle.tsx:125
-msgid "Your full handle will be"
-msgstr ""
-
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:223
 msgid "Your full handle will be <0>@{0}</0>"
+msgstr ""
+
+#: src/screens/Signup/StepHandle.tsx:125
+msgid "Your full username will be"
 msgstr ""
 
 #: src/components/dialogs/MutedWords.tsx:369
@@ -8116,8 +8120,4 @@ msgstr ""
 
 #: src/components/dms/ReportDialog.tsx:157
 msgid "Your report will be sent to the Bluesky Moderation Service"
-msgstr ""
-
-#: src/screens/Signup/index.tsx:142
-msgid "Your user handle"
 msgstr ""
