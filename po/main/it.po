@@ -1,16 +1,16 @@
 # 
 # Translators:
 # arestifop, 2024
-# Francisco, 2024
 # Michele Locati <michele@locati.it>, 2024
+# Francisco, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-17 00:47+0000\n"
-"PO-Revision-Date: 2024-12-17 05:43+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>, 2024\n"
+"PO-Revision-Date: 2024-12-17 13:03+0000\n"
+"Last-Translator: Francisco, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -7017,7 +7017,7 @@ msgstr "Autenticazione a due fattori (2FA)"
 
 #: src/screens/Signup/StepHandle.tsx:114
 msgid "Type your desired username"
-msgstr "Inserisci il nome utente che desideri utilizzare"
+msgstr "Inserisci il nome utente che desideri"
 
 #: src/screens/Messages/components/MessageInput.tsx:148
 msgid "Type your message here"
