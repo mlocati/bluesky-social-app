@@ -17,8 +17,6 @@ on:
         description: Pull request branch
         type: string
         required: false
-        # @todo remove following line once https://github.com/bluesky-social/social-app/pull/6775 gets merged
-        default: update-it
 
 jobs:
   update-pr-branch:
