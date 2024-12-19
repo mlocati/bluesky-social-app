@@ -12,7 +12,7 @@ on:
         description: Upstream base branch
         type: string
         default: main
-        required: false
+        required: true
       pr-branch:
         description: Pull request branch
         type: string
@@ -35,18 +35,24 @@ jobs:
             echo 'Invalid locale ID'
             exit 1
           fi
-          if [ -z "$BASE_BRANCH" ]; then
-            BASE_BRANCH=main
+          if [[ ! "$BASE_BRANCH" =~ ^[a-zA-Z0-9]+(/[a-zA-Z0-9]+)*$ ]]; then
+            echo 'Invalid upstream base branch name'
+            exit 1
+          fi
+          LOCALE_NAME=$(node -e "console.log(new Intl.DisplayNames(['en'], {type: 'language'}).of('$LOCALE_ID'))")
+          if [ $? -ne 0 ]; then
+            exit 1
           fi
           if [ -z "$PR_BRANCH" ]; then
             PR_BRANCH=update-$BASE_BRANCH-$LOCALE_ID
           fi
           echo "locale-id=$LOCALE_ID" >>"$GITHUB_OUTPUT"
+          echo "locale-name=$LOCALE_NAME" >>"$GITHUB_OUTPUT"
           echo "base-branch=$BASE_BRANCH" >>"$GITHUB_OUTPUT"
           echo "pr-branch=$PR_BRANCH" >>"$GITHUB_OUTPUT"
           cat "$GITHUB_OUTPUT"
       -
-        name: Check it branch ${{ steps.parse-inputs.outputs.pr-branch }} exists
+        name: Check if branch ${{ steps.parse-inputs.outputs.pr-branch }} exists
         id: check-pr-branch
         run: |
           if git ls-remote https://github.com/${{ github.repository }}.git | grep -E 'refs/heads/${{ steps.parse-inputs.outputs.pr-branch }}$'; then
@@ -81,7 +87,7 @@ jobs:
         if: steps.check-pr-branch.outputs.exists == 'no'
         run: git checkout -b '${{ steps.parse-inputs.outputs.pr-branch }}' 'upstream/${{ steps.parse-inputs.outputs.base-branch }}'
       -
-        name: Fetch new .po file
+        name: Fetch new ${{ steps.parse-inputs.outputs.locale-name }} .po file
         id: fetch-po
         run: |
           MY_TARGET_PO='src/locale/locales/${{ steps.parse-inputs.outputs.locale-id }}/messages.po'
@@ -106,5 +112,5 @@ jobs:
           git add src/locale/locales
           git config user.name GitHub
           git config user.email noreply@github.com
-          git commit -m 'Update po from Transifex'
+          git commit -m 'Update ${{ steps.parse-inputs.outputs.locale-name }} translations'
           git push origin '${{ steps.parse-inputs.outputs.pr-branch }}:${{ steps.parse-inputs.outputs.pr-branch }}'
