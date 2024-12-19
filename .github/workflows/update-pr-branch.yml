@@ -95,4 +95,4 @@ jobs:
           git config user.name GitHub
           git config user.email noreply@github.com
           git commit -m 'Update po from Transifex'
-          git push
+          git push origin
