@@ -46,34 +46,39 @@ jobs:
           echo "pr-branch=$PR_BRANCH" >>"$GITHUB_OUTPUT"
           cat "$GITHUB_OUTPUT"
       -
+        name: Check it branch ${{ steps.parse-inputs.outputs.pr-branch }} exists
+        id: check-pr-branch
+        run: |
+          if git ls-remote https://github.com/${{ github.repository }}.git | grep -E 'refs/heads/${{ steps.parse-inputs.outputs.pr-branch }}$'; then
+            echo 'exists=yes' >>"$GITHUB_OUTPUT"
+          else
+            echo 'Does not exist'
+            echo 'exists=no' >>"$GITHUB_OUTPUT"
+          fi
+      -
         name: Checkout ${{ steps.parse-inputs.outputs.pr-branch }} branch
-        id: checkout-pr-branch
-        continue-on-error: true
+        if: steps.check-pr-branch.outputs.exists == 'yes'
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_PAT }}
           ref: ${{ steps.parse-inputs.outputs.pr-branch }}
       -
-        name: Cleanup workspace
-        if: steps.checkout-pr-branch.outcome == 'failure'
-        run: find . -mindepth 1 -delete
-      -
         name: Checkout default branch
-        if: steps.checkout-pr-branch.outcome == 'failure'
+        if: steps.check-pr-branch.outputs.exists == 'no'
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_PAT }}
       -
         name: Add upstream repository
-        if: steps.checkout-pr-branch.outcome == 'failure'
+        if: steps.check-pr-branch.outputs.exists == 'no'
         run: git remote add upstream https://github.com/bluesky-social/social-app.git
       -
         name: Fetch ${{ steps.parse-inputs.outputs.base-branch }} branch of upstream repository
-        if: steps.checkout-pr-branch.outcome == 'failure'
+        if: steps.check-pr-branch.outputs.exists == 'no'
         run: git fetch upstream '${{ steps.parse-inputs.outputs.base-branch }}'
       -
         name: Create ${{ steps.parse-inputs.outputs.pr-branch }} branch based on ${{ steps.parse-inputs.outputs.base-branch }}
-        if: steps.checkout-pr-branch.outcome == 'failure'
+        if: steps.check-pr-branch.outputs.exists == 'no'
         run: git checkout -b '${{ steps.parse-inputs.outputs.pr-branch }}' 'upstream/${{ steps.parse-inputs.outputs.base-branch }}'
       -
         name: Fetch new .po file
