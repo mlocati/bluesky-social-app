@@ -17,7 +17,6 @@ on:
         description: Pull request branch
         type: string
         required: false
-
 jobs:
   update-pr-branch:
     name: Update PR branch
@@ -52,6 +51,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ steps.parse-inputs.outputs.pr-branch }}
+      -
+        name: Cleanup workspace
+        if: steps.checkout-pr-branch.outcome == 'failure'
+        run: find . -mindepth 1 -delete
       -
         name: Checkout default branch
         if: steps.checkout-pr-branch.outcome == 'failure'
