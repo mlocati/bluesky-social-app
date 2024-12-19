@@ -18,6 +18,9 @@ on:
         type: string
         required: false
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
 jobs:
   update-pr-branch:
     name: Update PR branch
