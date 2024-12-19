@@ -17,6 +17,7 @@ on:
         description: Pull request branch
         type: string
         required: false
+
 jobs:
   update-pr-branch:
     name: Update PR branch
@@ -93,6 +94,8 @@ jobs:
       -
         name: Commit
         if: steps.fetch-po.outputs.commit == 'yes'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git add src/locale/locales
           git config user.name GitHub
