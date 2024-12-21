@@ -1,16 +1,16 @@
 # 
 # Translators:
 # arestifop, 2024
-# Francisco, 2024
 # Michele Locati <michele@locati.it>, 2024
+# Francisco, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-21 00:43+0000\n"
-"PO-Revision-Date: 2024-12-21 01:56+0000\n"
-"Last-Translator: Michele Locati <michele@locati.it>, 2024\n"
+"PO-Revision-Date: 2024-12-21 12:53+0000\n"
+"Last-Translator: Francisco, 2024\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -1444,7 +1444,7 @@ msgstr "Chiudi la finestra di dialogo"
 #: src/view/com/composer/text-input/web/EmojiPicker.web.tsx:137
 #: src/view/com/composer/text-input/web/EmojiPicker.web.tsx:173
 msgid "Close emoji picker"
-msgstr ""
+msgstr "Chiudi selettore emoji"
 
 #: src/components/dialogs/GifSelect.tsx:169
 msgid "Close GIF dialog"
@@ -4317,7 +4317,7 @@ msgstr "Nessuno"
 
 #: src/components/WhoCanReply.tsx:237
 msgid "No one but the author can quote this post."
-msgstr "Nessuno ma tu potrai citare questo post."
+msgstr "Solo l'autore può citare questo post."
 
 #: src/screens/Profile/Sections/Feed.tsx:65
 msgid "No posts yet."
@@ -4518,7 +4518,7 @@ msgstr "Solo i file .jpg e .png sono supportati"
 
 #: src/components/WhoCanReply.tsx:217
 msgid "Only {0} can reply."
-msgstr "Solo {0} può rispondere."
+msgstr "Solo gli {0} possono rispondere."
 
 #: src/screens/Signup/StepHandle.tsx:152
 msgid "Only contains letters, numbers, and hyphens"
@@ -6326,7 +6326,7 @@ msgstr "Altri feed che potrebbero piacerti"
 
 #: src/components/WhoCanReply.tsx:70
 msgid "Some people can reply"
-msgstr "Solo alcune persone possono rispondere"
+msgstr "Risposte limitate"
 
 #: src/screens/Messages/Conversation.tsx:102
 msgid "Something went wrong"
@@ -6541,7 +6541,7 @@ msgstr "Tocca per cambiare l'icona dell'app"
 #: src/view/com/composer/text-input/web/EmojiPicker.web.tsx:138
 #: src/view/com/composer/text-input/web/EmojiPicker.web.tsx:174
 msgid "Tap to close the emoji picker"
-msgstr ""
+msgstr "Tocca per chiudere selettore emoji"
 
 #: src/components/ProgressGuide/Toast.tsx:156
 msgid "Tap to dismiss"
