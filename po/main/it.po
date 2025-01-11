@@ -1,16 +1,16 @@
 # 
 # Translators:
 # arestifop, 2024
-# Michele Locati <michele@locati.it>, 2025
 # Francisco, 2025
+# Michele Locati <michele@locati.it>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-11 00:43+0000\n"
-"PO-Revision-Date: 2025-01-11 01:58+0000\n"
-"Last-Translator: Francisco, 2025\n"
+"PO-Revision-Date: 2025-01-11 09:20+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -3383,7 +3383,7 @@ msgstr "Messaggi inappropriati o link espliciti"
 
 #: src/screens/Login/LoginForm.tsx:157
 msgid "Incorrect username or password"
-msgstr ""
+msgstr "Nome utente o password errati"
 
 #: src/screens/Login/SetNewPasswordForm.tsx:121
 msgid "Input code sent to your email for password reset"
@@ -4315,7 +4315,7 @@ msgstr "Non segui più {0}"
 
 #: src/screens/Signup/StepHandle.tsx:173
 msgid "No longer than {0} characters"
-msgstr ""
+msgstr "Non più di {0} caratteri"
 
 #: src/screens/Messages/components/ChatListItem.tsx:118
 msgid "No messages yet"
@@ -4924,7 +4924,7 @@ msgstr "Inserisci il tuo codice d'invito."
 
 #: src/screens/Login/LoginForm.tsx:95
 msgid "Please enter your password"
-msgstr ""
+msgstr "Inserisci la tua password"
 
 #: src/view/com/modals/DeleteAccount.tsx:235
 msgid "Please enter your password as well:"
@@ -4932,7 +4932,7 @@ msgstr "Inserisci anche la tua password:"
 
 #: src/screens/Login/LoginForm.tsx:90
 msgid "Please enter your username"
-msgstr ""
+msgstr "Inserisci il tuo nome utente"
 
 #: src/components/moderation/LabelsOnMeDialog.tsx:265
 msgid "Please explain why you think this label was incorrectly applied by {0}"
