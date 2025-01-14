@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-14 00:41+0000\n"
-"PO-Revision-Date: 2025-01-14 01:53+0000\n"
+"PO-Revision-Date: 2025-01-14 08:08+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
@@ -4907,7 +4907,7 @@ msgstr "Conferma la tua email prima di cambiarla. Si tratta di un requisito temp
 
 #: src/screens/Login/SetNewPasswordForm.tsx:56
 msgid "Please enter a password."
-msgstr ""
+msgstr "Inserisci una password."
 
 #: src/screens/Settings/components/AddAppPasswordDialog.tsx:114
 msgid "Please enter a unique name for this app password or use our randomly generated one."
