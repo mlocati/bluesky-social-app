@@ -1,16 +1,16 @@
 # 
 # Translators:
 # arestifop, 2024
-# Michele Locati <michele@locati.it>, 2025
 # Francisco, 2025
+# Michele Locati <michele@locati.it>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-22 00:44+0000\n"
-"PO-Revision-Date: 2025-01-22 01:57+0000\n"
-"Last-Translator: Francisco, 2025\n"
+"PO-Revision-Date: 2025-01-22 09:28+0000\n"
+"Last-Translator: Michele Locati <michele@locati.it>, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -1402,7 +1402,7 @@ msgstr "Clicca per attivare le citazioni di questo post."
 
 #: src/components/RichTextTag.tsx:54
 msgid "Click to open tag menu for {tag}"
-msgstr ""
+msgstr "Clicca per aprire il menu per {tag}"
 
 #: src/components/dms/MessageItem.tsx:241
 msgid "Click to retry failed message"
@@ -2873,7 +2873,7 @@ msgstr "Segui {0}"
 
 #: src/screens/VideoFeed/index.tsx:807
 msgid "Follow {handle}"
-msgstr ""
+msgstr "Segui {handle}"
 
 #: src/view/com/posts/AviFollowButton.tsx:68
 msgid "Follow {name}"
@@ -2960,7 +2960,7 @@ msgstr "Stai seguendo {0}"
 
 #: src/screens/VideoFeed/index.tsx:806
 msgid "Following {handle}"
-msgstr ""
+msgstr "Stai seguendo {handle}"
 
 #: src/view/com/posts/AviFollowButton.tsx:50
 msgid "Following {name}"
@@ -3181,7 +3181,7 @@ msgstr "Hashtag"
 
 #: src/components/RichTextTag.tsx:51
 msgid "Hashtag {tag}"
-msgstr ""
+msgstr "Hashtag: {tag}"
 
 #: src/screens/Signup/index.tsx:173
 msgid "Having trouble?"
@@ -4074,7 +4074,7 @@ msgstr "Silenzia"
 #: src/components/RichTextTag.tsx:140
 #: src/components/RichTextTag.tsx:153
 msgid "Mute {tag}"
-msgstr ""
+msgstr "Silenzia {tag}"
 
 #: src/view/com/profile/ProfileMenu.tsx:259
 #: src/view/com/profile/ProfileMenu.tsx:266
@@ -5906,19 +5906,19 @@ msgstr "Passaggio di sicurezza obbligatorio"
 
 #: src/components/RichTextTag.tsx:111
 msgid "See {tag} posts"
-msgstr ""
+msgstr "Vedi post su {tag}"
 
 #: src/components/RichTextTag.tsx:124
 msgid "See {tag} posts by user"
-msgstr ""
+msgstr "Vedi post su {tag} dell'utente"
 
 #: src/components/RichTextTag.tsx:118
 msgid "See #{tag} posts"
-msgstr ""
+msgstr "Vedi post su {tag}"
 
 #: src/components/RichTextTag.tsx:132
 msgid "See #{tag} posts by user"
-msgstr ""
+msgstr "Vedi post su #{tag} dell'utente"
 
 #: src/view/com/auth/SplashScreen.web.tsx:176
 msgid "See jobs at Bluesky"
@@ -7366,7 +7366,7 @@ msgstr "Riattiva"
 #: src/components/RichTextTag.tsx:140
 #: src/components/RichTextTag.tsx:153
 msgid "Unmute {tag}"
-msgstr ""
+msgstr "Riattiva {tag}"
 
 #: src/view/com/profile/ProfileMenu.tsx:258
 #: src/view/com/profile/ProfileMenu.tsx:264
@@ -7676,11 +7676,11 @@ msgstr "Videogiochi"
 
 #: src/screens/VideoFeed/index.tsx:1038
 msgid "Video is paused"
-msgstr ""
+msgstr "Video in pausa"
 
 #: src/screens/VideoFeed/index.tsx:1038
 msgid "Video is playing"
-msgstr ""
+msgstr "Video in riproduzione"
 
 #: src/view/com/util/post-embeds/VideoEmbed.web.tsx:191
 msgid "Video not found."
