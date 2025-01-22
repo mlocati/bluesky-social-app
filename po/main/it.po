@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-22 00:44+0000\n"
-"PO-Revision-Date: 2025-01-22 09:28+0000\n"
+"PO-Revision-Date: 2025-01-22 09:30+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
@@ -3181,7 +3181,7 @@ msgstr "Hashtag"
 
 #: src/components/RichTextTag.tsx:51
 msgid "Hashtag {tag}"
-msgstr "Hashtag: {tag}"
+msgstr "Hashtag {tag}"
 
 #: src/screens/Signup/index.tsx:173
 msgid "Having trouble?"
@@ -5914,7 +5914,7 @@ msgstr "Vedi post su {tag} dell'utente"
 
 #: src/components/RichTextTag.tsx:118
 msgid "See #{tag} posts"
-msgstr "Vedi post su {tag}"
+msgstr "Vedi post su #{tag}"
 
 #: src/components/RichTextTag.tsx:132
 msgid "See #{tag} posts by user"
