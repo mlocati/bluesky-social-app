@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Italian localization\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-23 00:43+0000\n"
-"PO-Revision-Date: 2025-01-23 01:55+0000\n"
+"PO-Revision-Date: 2025-01-23 08:11+0000\n"
 "Last-Translator: Michele Locati <michele@locati.it>, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/mlocati/teams/201833/it/)\n"
 "Language: it\n"
@@ -996,11 +996,11 @@ msgstr "Blocca gli account"
 
 #: src/components/dms/ReportDialog.tsx:326
 msgid "Block and Delete"
-msgstr ""
+msgstr "Blocca ed elimina"
 
 #: src/components/dms/ReportDialog.tsx:344
 msgid "Block and/or delete this conversation"
-msgstr ""
+msgstr "Blocca e/o elimina questa conversazione"
 
 #: src/view/screens/ProfileList.tsx:760
 msgid "Block list"
@@ -1013,11 +1013,11 @@ msgstr "Vuoi bloccare questi account?"
 #: src/components/dms/ReportDialog.tsx:348
 #: src/components/dms/ReportDialog.tsx:351
 msgid "Block user"
-msgstr ""
+msgstr "Blocca utente"
 
 #: src/components/dms/ReportDialog.tsx:330
 msgid "Block User"
-msgstr ""
+msgstr "Blocca utente"
 
 #: src/view/com/util/post-embeds/QuoteEmbed.tsx:83
 msgid "Blocked"
@@ -1950,11 +1950,11 @@ msgstr "Elimina il record della dichiarazione della chat"
 #: src/components/dms/ReportDialog.tsx:354
 #: src/components/dms/ReportDialog.tsx:357
 msgid "Delete conversation"
-msgstr ""
+msgstr "Elimina conversazione"
 
 #: src/components/dms/ReportDialog.tsx:328
 msgid "Delete Conversation"
-msgstr ""
+msgstr "Elimina conversazione"
 
 #: src/components/dms/MessageMenu.tsx:124
 msgid "Delete for me"
@@ -4809,7 +4809,7 @@ msgstr "Altro..."
 
 #: src/components/dms/ReportDialog.tsx:340
 msgid "Our moderation team has recieved your report."
-msgstr ""
+msgstr "Il nostro team di moderazione ha ricevuto la segnalazione."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:28
 msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
@@ -5608,7 +5608,7 @@ msgstr "Segnala starter pack"
 
 #: src/components/dms/ReportDialog.tsx:337
 msgid "Report submitted"
-msgstr ""
+msgstr "Segnalazione inviata"
 
 #: src/components/ReportDialog/SelectReportOptionView.tsx:41
 msgid "Report this content"
@@ -6028,7 +6028,7 @@ msgstr "Scegli la {emojiName} emoji come tuo avatar"
 
 #: src/components/ReportDialog/SubmitView.tsx:141
 msgid "Select the moderation service(s) to report to"
-msgstr "Seleziona il/i servizio/i di moderazione per fare la segnalazione"
+msgstr "Seleziona uno o più servizi di moderazione a cui segnalare"
 
 #: src/view/com/composer/videos/SelectVideoBtn.tsx:100
 msgid "Select video"
